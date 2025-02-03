@@ -1,0 +1,115 @@
+@import "./theme.css";
+
+
+/** =========================== BODY Style ================================== */
+body 
+{
+  margin: 0;
+  background-color: var(--background-color);
+  background-repeat: repeat;
+ 
+
+  color: var(--text-color);
+
+  font-family: "Inter", sans-serif;
+}
+
+
+.base-container
+{
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  display: inline-flex;
+
+  background: var(--background-color);
+  background-repeat: repeat;
+  background-position: left top;
+
+
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/** Link : Unvisited */
+a:link
+{
+  text-decoration: none;
+  color : var(--)
+}
+
+
+
+/** The Top bar that has the reume button and possibly the logo*/
+.top-bar
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.8% 2%;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+  box-shadow: var(--shadow-color) 0px 8px 50px -10px;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  background-color: var(--background-color);
+ 
+  transition: top 0.3s;
+}
+
+
+/**  Resume button to download the pdf resume*/
+.resume-btn 
+{
+  border: 3px solid var(--text-primary-color);
+  border-radius: 6px;
+  padding: 0.6% 1.8%;
+  background: none;
+
+  justify-content: center;
+  align-items: center;
+
+  display: inline-flex;
+   
+  /** Fallback */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  gap: 10px;
+}
+
+
+.nav-bar 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--background-color);
+  transition: top 500ms;
+}
+
+  nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links 
+  {
+    display: flex;
+    margin: -1em 0;
+    flex: 1 0 auto;
+    justify-content: flex-end;
+    align-items: center;
+  }

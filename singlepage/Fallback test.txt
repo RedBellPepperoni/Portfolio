@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #F4CBA3;
+            color: #0F3D3E;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F4CBA3;
+            padding: 10px 20px;
+            transition: top 0.3s;
+        }
+        .logo {
+            font-size: 24px;
+        }
+        .resume-btn {
+            border: 2px solid #0F3D3E;
+            background: none;
+            padding: 5px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .side-nav {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 20px;
+            font-size: 14px;
+        }
+        .side-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        .side-nav a {
+            text-decoration: none;
+            color: #0F3D3E;
+        }
+        .email {
+            margin-top: 20px;
+            transform: rotate(-90deg);
+            white-space: nowrap;
+        }
+        .content {
+            margin-top: 100px;
+            padding: 40px;
+        }
+        .social-links {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+        .wire {
+            position: fixed;
+            right: 50px;
+            top: 20%;
+            height: 60vh;
+            width: 2px;
+            background-color: #0F3D3E;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-bar">
+        <div class="logo">●</div>
+        <button class="resume-btn">Resume</button>
+    </header>
+    
+    <nav class="side-nav">
+        <ul>
+            <li><a href="#intro">01 | Intro</a></li>
+            <li><a href="#about">02 | About</a></li>
+            <li><a href="#experience">03 | Experience</a></li>
+            <li><a href="#projects">04 | Projects</a></li>
+        </ul>
+        <div class="email">abhishek.dalvi@gmail.com</div>
+    </nav>
+    
+    <main class="content">
+        <section id="intro">
+            <p style="color: blue;">Hello! I am</p>
+            <h1>Abhishek Dalvi</h1>
+            <h2>I make video games.</h2>
+            <p>I am a game developer, focused on engine programming, low-level rendering, and much more.</p>
+        </section>
+    </main>
+    
+    <aside class="social-links">
+        <a href="#">in</a>
+        <a href="#">in</a>
+        <a href="#">in</a>
+        <a href="#">in</a>
+    </aside>
+    
+    <div class="wire"></div>
+    
+    <script>
+        let lastScrollY = window.scrollY;
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > lastScrollY) {
+                document.querySelector(".top-bar").style.top = "-60px";
+            } else {
+                document.querySelector(".top-bar").style.top = "0";
+            }
+            lastScrollY = window.scrollY;
+        });
+    </script>
+</body>
+</html>
