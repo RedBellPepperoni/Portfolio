@@ -55,6 +55,7 @@ a:link
   left: 0;
   width: 100%;
   padding: 0.8% 2%;
+   padding:  clamp(0.5rem, 1vw, 2rem) clamp(0.6rem, 1.6vw, 2rem); 
   display: flex;
 
   justify-content: space-between;
@@ -75,7 +76,7 @@ button {
   border: 0;
   vertical-align: middle;
   text-decoration: none;
-  font-size: inherit;
+  font-size: clamp(0.8rem, 1vw, 2rem); 
   font-family: inherit;
   
   &.resume-btn 
@@ -84,9 +85,10 @@ button {
     color: var(--text-secondary-color);
     text-transform: uppercase;
     background: var(--background-color);
-    border: 3px solid var(--text-secondary-color);
-    border-radius: 6px;
-    padding: 1.0% 2.0%;
+    border: 0.2em solid var(--text-secondary-color);
+    border-radius: 0.2rem;
+    padding: 0.85% 2.0%;
+    padding:  clamp(0.5rem, 0.9vw, 2rem) clamp(0.6rem, 2w, 2rem); 
     transform-style: preserve-3d;
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), 150ms cubic-bezier(0, 0, 0.58, 1);
     
@@ -101,7 +103,7 @@ button {
       right: 0;
       bottom: 0;
       background: var(--text-secondary-color);
-      border: 3px solid var(--text-secondary-color);
+      border: 0.2em solid var(--text-secondary-color);
       border-radius: inherit;
     
       transform: translate3d(0, 0.20em, -1em);

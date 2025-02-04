@@ -4,6 +4,7 @@
 
 :root.light {
   --background-color: #E2C3A5;
+  --background-dark-color: #dcbb99;
   --text-primary-color: #0E3944;
   --text-secondary-color: #1B5563;
   --accent-color: #4750D0;
