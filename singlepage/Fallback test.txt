@@ -1,125 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-color: #F4CBA3;
-            color: #0F3D3E;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .top-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #F4CBA3;
-            padding: 10px 20px;
-            transition: top 0.3s;
-        }
-        .logo {
-            font-size: 24px;
-        }
-        .resume-btn {
-            border: 2px solid #0F3D3E;
-            background: none;
-            padding: 5px 15px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .side-nav {
-            position: fixed;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            padding: 20px;
-            font-size: 14px;
-        }
-        .side-nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        .side-nav a {
-            text-decoration: none;
-            color: #0F3D3E;
-        }
-        .email {
-            margin-top: 20px;
-            transform: rotate(-90deg);
-            white-space: nowrap;
-        }
-        .content {
-            margin-top: 100px;
-            padding: 40px;
-        }
-        .social-links {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-        }
-        .wire {
-            position: fixed;
-            right: 50px;
-            top: 20%;
-            height: 60vh;
-            width: 2px;
-            background-color: #0F3D3E;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <header class="top-bar">
-        <div class="logo">●</div>
-        <button class="resume-btn">Resume</button>
-    </header>
-    
-    <nav class="side-nav">
-        <ul>
-            <li><a href="#intro">01 | Intro</a></li>
-            <li><a href="#about">02 | About</a></li>
-            <li><a href="#experience">03 | Experience</a></li>
-            <li><a href="#projects">04 | Projects</a></li>
-        </ul>
-        <div class="email">abhishek.dalvi@gmail.com</div>
-    </nav>
-    
-    <main class="content">
-        <section id="intro">
-            <p style="color: blue;">Hello! I am</p>
-            <h1>Abhishek Dalvi</h1>
-            <h2>I make video games.</h2>
-            <p>I am a game developer, focused on engine programming, low-level rendering, and much more.</p>
-        </section>
-    </main>
-    
-    <aside class="social-links">
-        <a href="#">in</a>
-        <a href="#">in</a>
-        <a href="#">in</a>
-        <a href="#">in</a>
-    </aside>
-    
-    <div class="wire"></div>
-    
-    <script>
-        let lastScrollY = window.scrollY;
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > lastScrollY) {
-                document.querySelector(".top-bar").style.top = "-60px";
-            } else {
-                document.querySelector(".top-bar").style.top = "0";
-            }
-            lastScrollY = window.scrollY;
-        });
-    </script>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Testing 3js</title>
+		<style>
+			body { margin: 0; }
+		</style>
+	</head>
+	<body>
+		<div style="width: 100%; height: 100%; background: #E2C3A5; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+			<div style="align-self: stretch; padding-left: 36px; padding-right: 36px; padding-top: 26px; padding-bottom: 26px; background: #E2C3A5; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+				<div style="flex: 1 1 0; height: 84px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+					<div style="width: 84px; height: 84px; background: #0E3944; border-radius: 9999px"></div>
+				</div>
+				<div style="padding-left: 40px; padding-right: 40px; padding-top: 20px; padding-bottom: 20px; border-radius: 5px; border: 4px #1B5563 solid; justify-content: center; align-items: center; gap: 10px; display: flex">
+					<div style="text-align: right; color: #1B5563; font-size: 32px; font-family: Inter; font-weight: 600; word-wrap: break-word">Resume</div>
+				</div>
+			</div>
+			<div style="justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+				<div style="height: 888px; padding-left: 14px; padding-right: 14px; flex-direction: column; justify-content: center; align-items: center; gap: 150px; display: inline-flex">
+					<div style="align-self: stretch; height: 224px; padding-left: 17px; padding-right: 17px; padding-top: 50px; padding-bottom: 50px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+						<div style="align-self: stretch; padding-left: 8px; padding-right: 8px; padding-top: 3px; padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+							<div style="text-align: right"><span style="color: #4750D0; font-size: 11.79px; font-family: Inter; font-weight: 400; word-wrap: break-word">01 </span><span style="color: #4750D0; font-size: 11.79px; font-family: Inter; font-weight: 900; word-wrap: break-word">|</span></div>
+							<div style="color: #4750D0; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word">Intro</div>
+						</div>
+						<div style="padding-left: 8px; padding-right: 8px; padding-top: 3px; padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+							<div style="text-align: right"><span style="color: #1B5563; font-size: 11.79px; font-family: Inter; font-weight: 400; word-wrap: break-word">02 </span><span style="color: #1B5563; font-size: 11.79px; font-family: Inter; font-weight: 900; word-wrap: break-word">|</span></div>
+							<div style="color: black; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word">About</div>
+						</div>
+						<div style="padding-left: 8px; padding-right: 8px; padding-top: 3px; padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+							<div style="text-align: right"><span style="color: #1B5563; font-size: 11.79px; font-family: Inter; font-weight: 400; word-wrap: break-word">03 </span><span style="color: #1B5563; font-size: 11.79px; font-family: Inter; font-weight: 900; word-wrap: break-word">|</span></div>
+							<div style="color: black; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word">Experience</div>
+						</div>
+						<div style="padding-left: 8px; padding-right: 8px; padding-top: 3px; padding-bottom: 3px; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+							<div style="text-align: right"><span style="color: #1B5563; font-size: 11.79px; font-family: Inter; font-weight: 400; word-wrap: break-word">04 </span><span style="color: #1B5563; font-size: 11.79px; font-family: Inter; font-weight: 900; word-wrap: break-word">|</span></div>
+							<div style="color: black; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word">Projects</div>
+						</div>
+					</div>
+					<div style="height: 532px; flex-direction: column; justify-content: center; align-items: center; gap: 6px; display: flex">
+						<div style="width: 30px; height: 5px; position: relative">
+							<div style="width: 2px; height: 30px; left: 30px; top: 0px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; background: #1B5563"></div>
+							<div style="width: 5px; height: 2px; left: 2px; top: 5px; position: absolute; transform: rotate(-90deg); transform-origin: 0 0; background: #1B5563"></div>
+							<div style="width: 5px; height: 2px; left: 30px; top: 5px; position: absolute; transform: rotate(-90deg); transform-origin: 0 0; background: #1B5563"></div>
+						</div>
+						<div style="width: 20px; height: 20px; position: relative; transform: rotate(90deg); transform-origin: 0 0">
+							<div style="width: 16.92px; height: 13.59px; left: 1.54px; top: 3.20px; position: absolute; background: #1B5563"></div>
+						</div>
+						<div style="align-self: stretch; height: 31px; transform: rotate(90deg); transform-origin: 0 0; text-align: right; color: #1B5563; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">abhishek.r.dalvi@gmail.com</div>
+						<div style="width: 30px; height: 5px; position: relative; transform: rotate(-180deg); transform-origin: 0 0">
+							<div style="width: 2px; height: 30px; left: -30px; top: -0px; position: absolute; transform: rotate(-90deg); transform-origin: 0 0; background: #1B5563"></div>
+							<div style="width: 5px; height: 2px; left: -2px; top: -5px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; background: #1B5563"></div>
+							<div style="width: 5px; height: 2px; left: -30px; top: -5px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; background: #1B5563"></div>
+						</div>
+						<div style="width: 2px; height: 200px; background: #1B5563"></div>
+					</div>
+				</div>
+				<div style="padding: 50px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 17px; display: inline-flex">
+					<div style="color: #4750D0; font-size: 36px; font-family: Inter; font-weight: 500; word-wrap: break-word">Hello! I am</div>
+					<div style="color: #0E3944; font-size: 96px; font-family: Inter; font-weight: 700; line-height: 90px; word-wrap: break-word">Abhishek Dalvi</div>
+					<div style="color: #1B5563; font-size: 96px; font-family: Inter; font-weight: 700; line-height: 80px; word-wrap: break-word">I make video games.</div>
+					<div style="height: 44px; padding: 10px"></div>
+					<div style="width: 492px; color: #0B4654; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">I am a game developer , focused on engine programming, low- level rendering and much more. </div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

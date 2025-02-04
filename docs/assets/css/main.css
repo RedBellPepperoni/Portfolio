@@ -7,11 +7,8 @@ body
   margin: 0;
   background-color: var(--background-color);
   background-repeat: repeat;
- 
-
   color: var(--text-color);
-
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 
@@ -37,9 +34,17 @@ body
 a:link
 {
   text-decoration: none;
-  color : var(--)
+
 }
 
+.visually-hidden {
+  width: 0;
+  overflow: hidden;
+  height: 0;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+}
 
 
 /** The Top bar that has the reume button and possibly the logo*/
@@ -56,34 +61,88 @@ a:link
   align-items: center;
 
   box-sizing: border-box;
-  box-shadow: var(--shadow-color) 0px 8px 50px -10px;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  background-color: var(--background-color);
+  background: none;
  
   transition: top 0.3s;
 }
 
 
-/**  Resume button to download the pdf resume*/
-.resume-btn 
-{
-  border: 3px solid var(--text-primary-color);
-  border-radius: 6px;
-  padding: 0.6% 1.8%;
-  background: none;
-
-  justify-content: center;
-  align-items: center;
-
-  display: inline-flex;
-   
-  /** Fallback */
-  font-size: 16px;
-  font-weight: bold;
+button {
+  position: relative;
+  display: inline-block;
   cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  
+  &.resume-btn 
+  {
+    font-weight: 600;
+    color: var(--text-secondary-color);
+    text-transform: uppercase;
+    background: var(--background-color);
+    border: 3px solid var(--text-secondary-color);
+    border-radius: 6px;
+    padding: 1.0% 2.0%;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), 150ms cubic-bezier(0, 0, 0.58, 1);
+    
+    &::before
+    {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--text-secondary-color);
+      border: 3px solid var(--text-secondary-color);
+      border-radius: inherit;
+    
+      transform: translate3d(0, 0.20em, -1em);
+      
+      transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+    }
 
-  gap: 10px;
+    &:hover 
+    {
+      background: var(--background-color);
+      transform: translate(0.05rem, 0.15rem);
+     
+      &::before 
+      {
+        transform: translate3d(-0.05rem, 0.05rem, -1rem);
+      }
+
+    }
+
+    &:active 
+    {
+      background: var(--background-color);
+      transform: translate(0.10rem, 0.3rem);
+      
+      &::before 
+      {
+        box-shadow: 0 0 0 2px var(--text-primary-color), 0 0 var(--text-primary-color)-shadow;
+        transform: translate3d(-0.10rem, -0.1rem, -1rem);
+      }
+      
+    }
+  }
+}
+
+
+
+.resume-btn:hover
+{
+  
+  transform: translate(0, 0);
+ 
 }
 
 
