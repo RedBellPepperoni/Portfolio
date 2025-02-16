@@ -1,19 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Inter:wght@400;600&display=swap");
+@import "./fonts.css";
 
 :root,
 
 :root.light {
-  --background-color: #E2C3A5;
-  --background-dark-color: #dcbb99;
+  --background-color: #FFFDF6;
+  --background-dark-color: #b9b6ab;
   --text-primary-color: #0E3944;
   --text-secondary-color: #1B5563;
   --accent-color: #4750D0;
-
   --link-unvisited-color: #4750D0;
   --grey-color: #303f50;
   --grey-text: #cfd8e2;
-
   --shadow-color: #00000033;
+  --cursor-color:  #1B5563;
+
+  
+
 }
 
 :root.dark {
