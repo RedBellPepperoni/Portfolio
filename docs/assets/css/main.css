@@ -351,7 +351,7 @@ li{
 /** ======================= SECTIONS ====================== */
 
 .page-section{
-  height: 500vh;
+  height: 260vh;
   width: 100%;
   display: grid;
   place-items: center;
