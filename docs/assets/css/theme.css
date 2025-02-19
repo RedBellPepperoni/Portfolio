@@ -5,7 +5,7 @@
 :root.light {
   --background-color: #FFFDF6;
   --background-dark-color: #b9b6ab;
-  --text-primary-color: #0E3944;
+  --text-primary-color: #FF156B;
   --text-secondary-color: #1B5563;
   --accent-color: #4750D0;
   --link-unvisited-color: #4750D0;
@@ -14,12 +14,49 @@
   --shadow-color: #00000033;
   --cursor-color:  #1B5563;
 
-  
+  --mask-color-one:#b9b6ab;
+  --mask-color-two: #04d685;
+
+  --mask-circle: #C02B1B;
 
 }
 
 :root.dark {
   --background-color: #0d1926;
+  --background-dark-color: #b9b6ab;
+  --text-primary-color: #0E3944;
+  --text-secondary-color: #1B5563;
+  --accent-color: #4750D0;
+  --link-unvisited-color: #4750D0;
+  --grey-color: #303f50;
+  --grey-text: #cfd8e2;
+  --shadow-color: #00000033;
+  --cursor-color:  #1B5563;
 }
 
+
+.color-accent
+{
+    color: var(--accent-color);
+}
+
+.color-text-primary
+{
+    color: var(--accent-color);
+}
+
+.color-text-secondary
+{
+    color: var(--accent-color);
+}
+
+.color-maskOne
+{
+    color: var(--mask-color-one);
+}
+
+.color-maskTwo
+{
+    color: var(--mask-color-one);
+}
 

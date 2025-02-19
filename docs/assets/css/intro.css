@@ -13,29 +13,40 @@
 .heading.greeting
 {
    
-    font-size: clamp(0.08rem, 3vw,20rem);
-    color: var(--accent-color);
+    font-size: clamp(0.08rem, 2.5vw,20rem);
     text-align: left;
     font-weight: 600;
-    line-height: 3rem;
+    line-height: 0.7;
 }
 
 .heading.name
 {
    
-    font-size: clamp(0.1rem, 7vw,20rem);
+    font-size: clamp(0.1rem, 6vw,20rem);
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    color: var(--text-secondary-color);
+    color: var(--text-primary-color);
 }
 
 
 .heading.tagline
 {
-    font-size: clamp(0.1rem, 7vw,20rem);
+    font-size: clamp(0.1rem, 6vw,20rem);
     font-weight: 600;
-    color: var(--text-primary-color);
-    line-height: 5rem;
+    line-height: 0.7;
+}
+
+
+.heading.tagline.primary
+{
+  color: var(--text-secondary-color);
+
+}
+
+.heading.tagline.secondary
+{
+    color: var(--mask-color-two);
+
 }
 
 .page-intro
@@ -52,4 +63,41 @@
     gap: clamp(0.01rem, 0.5%, 15rem);
     text-align: left;
     
+}
+
+
+
+
+
+
+
+.spacer 
+{
+    width: 100%;
+    height: 100%;
+    padding: clamp(0.02rem, 3%, 30rem);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.body-text
+{
+    font-size: clamp(0.02rem, 2.3vw,20rem);
+    font-weight: 600;
+    display: inline-block;
+
+    font-family: 'Poppins', sans-serif;
+  
+    text-align: left;
+    width: 93%;
+}
+
+.body-text.primary
+{
+    color: var(--text-secondary-color);
+}
+
+.body-text.secondary
+{
+    color: var(--mask-color-one);
 }
