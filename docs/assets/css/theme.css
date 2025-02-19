@@ -42,7 +42,7 @@
 
 .color-text-primary
 {
-    color: var(--accent-color);
+    color: var(--text-primary-color);
 }
 
 .color-text-secondary

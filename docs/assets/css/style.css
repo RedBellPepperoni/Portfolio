@@ -1,0 +1,89 @@
+@import "./theme.css";
+
+
+/** =========================== BODY STYLE ================================== */
+body 
+{
+  margin: 0;
+  background-color: var(--background-color);
+  background-repeat: repeat;
+  color: var(--text-color);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+/** ====================================**Mask Stuff=======================================**/
+.hovertext
+{
+  text-wrap: warp;
+}
+.page-container
+{
+    position: relative;
+}
+
+.content{
+  
+  -webkit-background-clip: text;
+  background-clip: text;
+ 
+}
+
+.hidden-content {
+  --x: 0px;
+  --y: 0px;
+  --size: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgb(251, 156, 132);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(251, 156, 132, 1) 0%,
+    rgba(240, 102, 128, 1) 50%,
+    rgba(129, 36, 112, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(251, 156, 132, 1) 0%,
+    rgba(240, 102, 128, 1) 50%,
+    rgba(129, 36, 112, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(251, 156, 132, 1) 0%,
+    rgba(240, 102, 128, 1) 50%,
+    rgba(129, 36, 112, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb9c84",endColorstr="#812470",GradientType=1);
+  color: var(--bg);
+  --mask: radial-gradient(
+    circle at var(--x) var(--y),
+    black var(--size),
+    transparent 0
+  );
+  -webkit-mask-image: var(--mask);
+  mask-image: var(--mask);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.page
+{
+    display: block;
+    height:100vh;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 2% 10%;
+}
+  
+
+  
+  

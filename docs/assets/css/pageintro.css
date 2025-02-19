@@ -80,24 +80,14 @@
     flex-shrink: 0;
 }
 
-.body-text
+.bodytext
 {
     font-size: clamp(0.02rem, 2.3vw,20rem);
     font-weight: 600;
     display: inline-block;
-
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-wrap: pretty;
     text-align: left;
-    width: 93%;
+    width: 60%;
 }
 
-.body-text.primary
-{
-    color: var(--text-secondary-color);
-}
-
-.body-text.secondary
-{
-    color: var(--mask-color-one);
-}
