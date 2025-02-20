@@ -143,14 +143,7 @@
       font-weight: 700;
     }
   
-    @font-face {
   
-      src: url("/docs/assets/fonts/poppins/Poppins-Bold.ttf");
-      font-family: 'Poppins';
-      font-style: italic;
-      font-weight: 700;
-    }
-
 
     /*------------------ Extra Bold -------------------*/
     @font-face {
