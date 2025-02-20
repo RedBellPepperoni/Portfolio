@@ -5,9 +5,9 @@ const linkIcon = document.querySelector(".btn-icon");
 let linkAnimated = false;
 
 let xTo = gsap.quickTo(".hidden-content", "--x", {
-    duration: 0.4,
-    ease: "power4.out"
-  }),
+  duration: 0.4,
+  ease: "power4.out"
+}),
   yTo = gsap.quickTo(".hidden-content", "--y", {
     duration: 0.4,
     ease: "power4.out"
@@ -24,10 +24,10 @@ let hoveringContent = gsap.utils.toArray(".hovertext", content);
 
 hoveringContent.forEach((el) => {
   el.addEventListener("mouseenter", () => {
-    tl.restart();
+    tl.tweenTo(0.75);
   });
   el.addEventListener("mouseleave", () => {
-    tl.reverse();
+    tl.tweenTo(0);
   });
 });
 

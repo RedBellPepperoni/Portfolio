@@ -8,6 +8,7 @@ body
   background-color: var(--background-color);
   background-repeat: repeat;
   color: var(--text-color);
+  cursor: none;
 }
 
 html{
@@ -29,6 +30,7 @@ html{
   
   -webkit-background-clip: text;
   background-clip: text;
+  z-index: 10;
  
 }
 
@@ -41,24 +43,15 @@ html{
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgb(251, 156, 132);
+  background: rgb(192,43,27);
   background: -moz-linear-gradient(
-    180deg,
-    rgba(251, 156, 132, 1) 0%,
-    rgba(240, 102, 128, 1) 50%,
-    rgba(129, 36, 112, 1) 100%
+    90deg, rgba(192,43,27,1) 0%, rgba(125,40,6,1) 69%, rgba(162,8,80,1) 100%
   );
   background: -webkit-linear-gradient(
-    180deg,
-    rgba(251, 156, 132, 1) 0%,
-    rgba(240, 102, 128, 1) 50%,
-    rgba(129, 36, 112, 1) 100%
+    90deg, rgba(192,43,27,1) 0%, rgba(125,40,6,1) 69%, rgba(162,8,80,1) 100%
   );
   background: linear-gradient(
-    180deg,
-    rgba(251, 156, 132, 1) 0%,
-    rgba(240, 102, 128, 1) 50%,
-    rgba(129, 36, 112, 1) 100%
+    90deg, rgba(192,43,27,1) 0%, rgba(125,40,6,1) 69%, rgba(162,8,80,1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb9c84",endColorstr="#812470",GradientType=1);
   color: var(--bg);
@@ -71,19 +64,278 @@ html{
   mask-image: var(--mask);
   pointer-events: none;
   visibility: hidden;
+  
 }
 
 .page
 {
     display: block;
-    height:100vh;
-
+    height: clamp(2rem, 40vw, 300rem);
     align-items: center;
     justify-content: center;
-
-    padding: 2% 10%;
+    padding: clamp(0.2rem, 10%, 25rem) clamp(0.2rem, 10%, 25rem) clamp(0.2rem, 3%, 25rem) clamp(0.2rem, 20%, 25rem);
 }
   
 
   
+  /** ================================ TOP BAR ======================================**/
+
   
+/** The Top bar that has the reume button and possibly the logo*/
+.top-bar
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.8% 2%;
+   padding:  clamp(0.5rem, 1vw, 2rem) clamp(0.6rem, 1.6vw, 2rem); 
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+  background: none;
+  z-index: 70;
+  transition: top 0.3s;
+}
+
+
+/** Resume _ Button */
+button.resume-btn 
+{
+  font-weight: 700;
+  font-size: clamp(0.2rem, 1vw, 5rem);
+  color: var(--color-textSecondary);
+  text-transform: uppercase;
+  background: var(--background-color);
+  border: clamp(0.12em, 0.2vw, 0.5em) solid var(--color-textSecondary);
+  border-radius: clamp(0.12rem , 0.5vw, 1rem);
+  padding: 0.85% 2.0%;
+  padding:  clamp(0.5rem, 0.9vw, 2rem) clamp(0.6rem, 2w, 2rem); 
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), 150ms cubic-bezier(0, 0, 0.58, 1);
+  cursor: none;
+
+  &::before
+  {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-textSecondary);
+    border: clamp(0.12em, 0.2vw, 0.5em) solid var(--color-textSecondary);
+    border-radius: inherit;
+   
+    transform: translate3d(0, 0.20em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  }
+
+  &:hover 
+  {
+    background: var(--background-color);
+    transform: translate(0.05rem, 0.15rem);
+    border: clamp(0.12em, 0.2vw, 0.5em) solid var(--color-textPrimary);
+    &::before 
+    {
+      transform: translate3d(-0.05rem, 0.05rem, -1rem);
+      background: var(--color-textPrimary);
+      border: clamp(0.12em, 0.2vw, 0.5em) solid var(--color-textPrimary);
+    }
+
+  }
+
+  &:active 
+  {
+    background: var(--background-color);
+    transform: translate(0.10rem, 0.3rem);
+    z-index: 100;
+    &::before 
+    {
+      z-index: 100;
+      box-shadow: 0 0 0 2px var(--color-textPrimary), 0 0 var(--color-textPrimary)-shadow;
+      transform: translate3d(-0.10rem, -0.1rem, -1rem);
+    }
+    
+  }
+}
+
+
+/** LOGO _ Button */
+button.logo-btn 
+{
+  font-weight: 600;
+  color: var(--color-textSecondary);
+  text-transform: uppercase;
+  background: var(--background-color);
+  border: 0.2em solid var(--color-textSecondary);
+  border-radius: 50%;
+  padding: 2% 2%;
+  padding:  clamp(0.5rem, 0.9vw, 2rem) clamp(0.6rem, 2w, 2rem); 
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), 150ms cubic-bezier(0, 0, 0.58, 1);
+
+
+  &::before
+  {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-textSecondary);
+    border: 0.2em solid var(--color-textSecondary);
+    border-radius: inherit;
+   
+    transform: translate3d(0, 0.20em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  }
+
+  &:hover 
+  {
+    background: var(--background-color);
+    transform: translate(0.05rem, 0.15rem);
+    &::before 
+    {
+      transform: translate3d(-0.05rem, 0.05rem, -1rem);
+    }
+
+  }
+
+  &:active 
+  {
+    background: var(--background-color);
+    transform: translate(0.10rem, 0.3rem);
+    z-index: 100;
+    &::before 
+    {
+      z-index: 100;
+      box-shadow: 0 0 0 2px var(--color-textPrimary), 0 0 var(--color-textPrimary)-shadow;
+      transform: translate3d(-0.10rem, -0.1rem, -1rem);
+    }
+    
+  }
+}
+
+
+
+/** ==================== LINKS STYING ==========================**/
+
+
+/** Link : Unvisited */
+a:link
+{
+  text-decoration: none;
+
+}
+a:visited
+{
+  text-decoration: none;
+}
+
+
+/** ==================== LISTS ======================*/
+ol {
+	list-style: none;
+  padding-inline-start: clamp(0.1rem, 3vw,15rem);
+  
+}
+
+li{
+  counter-increment: ordered-counter;
+  line-height: 1.75 !important;
+  position: relative;
+  margin-left: clamp(0.2rem, 1vw, 2rem);
+  align-items: left;
+  font-family: 'Inter', sans-serif;
+  z-index: 60;
+
+  &::before
+  {
+   
+      content: "0" counter(ordered-counter);
+      position: absolute;
+      text-align: right;
+      color: var(--color-textSecondary);
+      font-size: clamp(0.3rem, 1.2vw, 2rem); 
+      font-style: normal;
+      font-weight: 500;
+      left: calc( clamp(0.2rem, 2vw, 2rem) * -1);
+
+      
+      top : clamp(0.1rem, 0.4vw,8rem);
+    
+  }
+
+}
+
+
+
+/** ==================== SIDE MENU STYLE ================*/
+  
+.side-menu
+{
+  position: absolute;
+  top: clamp(0.2rem, min(12vh,8vw),15rem);
+  width: 100%;
+  padding:  clamp(0.1rem, 0.05vw, 2rem) clamp(0.01rem, 0.1vw, 2rem); 
+  display: flex;
+  align-items: left;
+}
+
+
+
+.side-menu-container
+{
+  display: flex;
+  flex: 1;
+  vertical-align: middle;
+  align-items: flex-start;
+   
+}
+
+
+.side-menu-text
+{
+  display: inline-block;
+  color: var(--color-textSecondary);
+  text-align: left;
+  font-family: "Inter", Helvetica;
+  font-size: clamp(0.3rem, 1.4vw, 2rem);
+  padding:  clamp(0.1rem, 0.6vw, 2rem) clamp(0.0rem, 0.05vw, 2rem); 
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  z-index: 70;
+
+}
+
+.divider {
+  width: clamp(0.2rem, 0.25vw, 2rem);
+  height :clamp(0.3rem, 1.2vw, 2rem);
+  background: var(--color-textSecondary);
+  margin: 0 clamp(0.3rem, 0.4vw, 2rem);;
+  align-self:center;
+}
+
+
+
+.side-menu-text-active
+{
+  color: var(--color-textSecondary);
+  text-align: center;
+  font-family: "Inter", Helvetica, sans-serif;
+  font-size: clamp(0.3rem, 0.7vw, 2rem); 
+  font-style: bold;
+  font-weight: 900;
+  line-height: normal;
+ 
+}

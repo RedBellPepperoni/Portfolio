@@ -13,41 +13,30 @@
 .heading.greeting
 {
    
-    font-size: clamp(0.08rem, 2.5vw,20rem);
+    font-size: clamp(0.08rem, 2.6vw,20rem);
     text-align: left;
     font-weight: 600;
-    line-height: 0.7;
+    font-family: 'Poppins', Helvetica, sans-serif;
+   
 }
 
 .heading.name
 {
    
-    font-size: clamp(0.1rem, 6vw,20rem);
+    font-size: clamp(0.1rem, 7vw,20rem);
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    color: var(--text-primary-color);
 }
 
 
 .heading.tagline
 {
-    font-size: clamp(0.1rem, 6vw,20rem);
+    font-size: clamp(0.1rem, 7vw,20rem);
     font-weight: 600;
     line-height: 0.7;
 }
 
 
-.heading.tagline.primary
-{
-  color: var(--text-secondary-color);
-
-}
-
-.heading.tagline.secondary
-{
-    color: var(--mask-color-two);
-
-}
 
 .page-intro
 {
@@ -58,7 +47,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: clamp(0.2rem, 3%, 25rem);
+  
     box-sizing: content-box;
     gap: clamp(0.01rem, 0.5%, 15rem);
     text-align: left;
@@ -68,7 +57,12 @@
 
 
 
-
+.headergroup
+{
+    display: inline-block;
+    text-wrap: pretty;
+    text-align: left;
+}
 
 
 .spacer 
@@ -88,6 +82,6 @@
     font-family: 'Inter', sans-serif;
     text-wrap: pretty;
     text-align: left;
-    width: 60%;
+    width: 97%;
 }
 

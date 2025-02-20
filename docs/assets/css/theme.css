@@ -2,11 +2,46 @@
 
 :root,
 
+
+:root.dark {
+    --background-color: #081E21;
+    --background-dark-color: #b9b6ab;
+    --color-textPrimary: #CA3C25;
+    --color-textSecondary: #D6AF9B;
+    --accent-color: #FDFCDC;
+    --color-extraOne: #81ADC8;
+    --color-extraTwo: #0081A7;
+
+    --link-unvisited-color: #4750D0;
+    --grey-color: #303f50;
+    --grey-text: #cfd8e2;
+    --shadow-color: #00000033;
+    --cursor-color:  #1B5563;
+
+
+    /* --background-color: #081E21;
+    --background-dark-color: #b9b6ab;
+    --color-textPrimary: #FF156B;
+    --color-textSecondary: #D6AF9B;
+    --accent-color: #ebebed;
+    --link-unvisited-color: #4750D0;
+    --grey-color: #303f50;
+    --grey-text: #cfd8e2;
+    --shadow-color: #00000033;
+    --cursor-color:  #1B5563; */
+  }
+  
+
+  
+
+
+
+
 :root.light {
   --background-color: #FFFDF6;
   --background-dark-color: #b9b6ab;
-  --text-primary-color: #FF156B;
-  --text-secondary-color: #1B5563;
+  --color-textPrimary: #FF156B;
+  --color-textSecondary: #1B5563;
   --accent-color: #4750D0;
   --link-unvisited-color: #4750D0;
   --grey-color: #303f50;
@@ -14,24 +49,11 @@
   --shadow-color: #00000033;
   --cursor-color:  #1B5563;
 
-  --mask-color-one:#b9b6ab;
-  --mask-color-two: #04d685;
+  --color-black:#02061b;
+  --color-birch: #ded7cf;
 
   --mask-circle: #C02B1B;
 
-}
-
-:root.dark {
-  --background-color: #0d1926;
-  --background-dark-color: #b9b6ab;
-  --text-primary-color: #0E3944;
-  --text-secondary-color: #1B5563;
-  --accent-color: #4750D0;
-  --link-unvisited-color: #4750D0;
-  --grey-color: #303f50;
-  --grey-text: #cfd8e2;
-  --shadow-color: #00000033;
-  --cursor-color:  #1B5563;
 }
 
 
@@ -42,21 +64,31 @@
 
 .color-text-primary
 {
-    color: var(--text-primary-color);
+    color: var(--color-textPrimary);
 }
 
 .color-text-secondary
 {
-    color: var(--accent-color);
+    color: var(--color-textSecondary);
 }
 
+.color-extra-one
+{
+    color: var(--color-extraOne);
+}
+
+
+.color-extra-two
+{
+    color: var(--color-extraTwo);
+}
 .color-maskOne
 {
-    color: var(--mask-color-one);
+    color: var(--color-black);
 }
 
 .color-maskTwo
 {
-    color: var(--mask-color-one);
+    color: var(--color-black);
 }
 
