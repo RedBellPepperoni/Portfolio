@@ -73,23 +73,26 @@ html{
     display: flex;
     height: clamp(2rem, 40vw, 300rem);
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start ;
    
     padding-right: clamp(0.2rem, 10%, 25rem);
     padding-left: clamp(0.2rem, 20%, 25rem);
+    
+
+
 }
 
 .page.intro
 {
-  padding: clamp(0.2rem, 10%, 25rem)  clamp(0.2rem, 3%, 25rem) ;
+  padding-top:  clamp(0.2rem, 10%, 25rem) ;
+  padding-bottom:  clamp(0.2rem, 3%, 25rem) ;
 }
-  
-
 .page.exp
 {
-
- 
+  padding-top:  clamp(0.2rem, 2%, 25rem) ;
+  padding-bottom:  clamp(0.2rem, 30%, 25rem) ;
 }
+
   
 
   
