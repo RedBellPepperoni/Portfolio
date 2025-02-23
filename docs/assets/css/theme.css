@@ -4,7 +4,7 @@
 
 
 :root.dark {
-    --background-color: #081E21;
+    --background-color: #081e21;
     --background-dark-color: #b9b6ab;
     --color-textPrimary: #CA3C25;
     --color-textSecondary: #D6AF9B;
@@ -18,6 +18,8 @@
     --shadow-color: #00000033;
     --cursor-color:  #1B5563;
 
+    --tab-inactive : #175263;
+    --tab-hovered : #247a91;
 
     /* --background-color: #081E21;
     --background-dark-color: #b9b6ab;

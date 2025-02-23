@@ -2,6 +2,9 @@ console.clear();
 const content = document.querySelector(".content");
 const link = document.querySelector("a");
 const linkIcon = document.querySelector(".btn-icon");
+const maskSizeMin = 0.005;
+const maskMultiplier = 35;
+
 let linkAnimated = false;
 
 let xTo = gsap.quickTo(".hidden-content", "--x", {
@@ -13,12 +16,23 @@ let xTo = gsap.quickTo(".hidden-content", "--x", {
     ease: "power4.out"
   });
 
+function updateSize() {
+  let size = window.innerWidth * maskSizeMin; 
+  gsap.set(".hidden-content", { "--size": size });
+  updateTimelineSize(size);
+}
+
+function updateTimelineSize(size) {
+  tl.clear();
+  tl.to(".hidden-content", {
+    "--size": size * maskMultiplier, 
+    duration: 0.75,
+    ease: "back.out(1.7)"
+  });
+}
+
 let tl = gsap.timeline({ paused: true });
-tl.to(".hidden-content", {
-  "--size": 250,
-  duration: 0.75,
-  ease: "back.out(1.7)"
-});
+updateTimelineSize(window.innerWidth * maskSizeMin); // Initial size based on 10% of the viewport width
 
 let hoveringContent = gsap.utils.toArray(".hovertext", content);
 
@@ -30,34 +44,6 @@ hoveringContent.forEach((el) => {
     tl.tweenTo(0);
   });
 });
-
-/***************************************
-              Btn Hovering
-***************************************/
-// let btnTl = gsap.timeline({ paused: true });
-// btnTl.to(".hidden-content", {
-//   "--size": 20,
-//   duration: 0.75,
-//   ease: "back.out(1.7)"
-// });
-
-// link.addEventListener("mouseenter", (e) => {
-//   linkAnimated = true;
-//   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-//   let iconRect = linkIcon.getBoundingClientRect();
-//   let centerX = iconRect.left + iconRect.width / 2;
-//   let centerY = iconRect.top + iconRect.height / 2 + scrollTop;
-
-//   yTo(centerY);
-//   xTo(centerX);
-//   btnTl.restart();
-// });
-
-// link.addEventListener("mouseleave", (e) => {
-//   linkAnimated = false;
-//   btnTl.reverse();
-// });
 
 /***************************************
     Add Mask on First Mouse Movement
@@ -77,7 +63,7 @@ function onFirstMove(e) {
 }
 
 /***************************************
-      Only for the preview image
+    Only for the preview image
 ***************************************/
 gsap.set(".hidden-content", {
   autoAlpha: 1,
@@ -85,3 +71,6 @@ gsap.set(".hidden-content", {
   "--y": window.innerHeight / 2
 });
 tl.progress(0.2);
+
+window.addEventListener("resize", updateSize);
+updateSize();

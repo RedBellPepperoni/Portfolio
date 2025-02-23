@@ -31,6 +31,7 @@ html{
   -webkit-background-clip: text;
   background-clip: text;
   z-index: 10;
+  
  
 }
 
@@ -69,11 +70,25 @@ html{
 
 .page
 {
-    display: block;
+    display: flex;
     height: clamp(2rem, 40vw, 300rem);
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    padding: clamp(0.2rem, 10%, 25rem) clamp(0.2rem, 10%, 25rem) clamp(0.2rem, 3%, 25rem) clamp(0.2rem, 20%, 25rem);
+   
+    padding-right: clamp(0.2rem, 10%, 25rem);
+    padding-left: clamp(0.2rem, 20%, 25rem);
+}
+
+.page.intro
+{
+  padding: clamp(0.2rem, 10%, 25rem)  clamp(0.2rem, 3%, 25rem) ;
+}
+  
+
+.page.exp
+{
+
+ 
 }
   
 
@@ -100,6 +115,24 @@ html{
   z-index: 70;
   transition: top 0.3s;
 }
+
+
+/* Halftone effect container */
+.halftone {
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  background-image: radial-gradient(transparent 1px, #092327 1px);
+  background-size: 4px 4px;
+  backdrop-filter: blur(3px);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    var(--background-color) 40%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(to bottom, var(--background-color) 40%, transparent 100%);
+}
+
 
 
 /** Resume _ Button */
@@ -246,36 +279,37 @@ a:visited
 ol {
 	list-style: none;
   padding-inline-start: clamp(0.1rem, 3vw,15rem);
+  li{
+    counter-increment: ordered-counter;
+    line-height: 1.75 !important;
+    position: relative;
+    margin-left: clamp(0.2rem, 1vw, 2rem);
+    align-items: left;
+    font-family: 'Inter', sans-serif;
+    z-index: 60;
+  
+    &::before
+    {
+     
+        content: "0" counter(ordered-counter);
+        position: absolute;
+        text-align: right;
+        color: var(--color-textSecondary);
+        font-size: clamp(0.3rem, 1.2vw, 2rem); 
+        font-style: normal;
+        font-weight: 500;
+        left: calc( clamp(0.2rem, 2vw, 2rem) * -1);
+  
+        
+        top : clamp(0.1rem, 0.4vw,8rem);
+      
+    }
+  
+  }
+  
   
 }
 
-li{
-  counter-increment: ordered-counter;
-  line-height: 1.75 !important;
-  position: relative;
-  margin-left: clamp(0.2rem, 1vw, 2rem);
-  align-items: left;
-  font-family: 'Inter', sans-serif;
-  z-index: 60;
-
-  &::before
-  {
-   
-      content: "0" counter(ordered-counter);
-      position: absolute;
-      text-align: right;
-      color: var(--color-textSecondary);
-      font-size: clamp(0.3rem, 1.2vw, 2rem); 
-      font-style: normal;
-      font-weight: 500;
-      left: calc( clamp(0.2rem, 2vw, 2rem) * -1);
-
-      
-      top : clamp(0.1rem, 0.4vw,8rem);
-    
-  }
-
-}
 
 
 
