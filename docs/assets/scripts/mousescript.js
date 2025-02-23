@@ -3,7 +3,7 @@ const content = document.querySelector(".content");
 const link = document.querySelector("a");
 const linkIcon = document.querySelector(".btn-icon");
 const maskSizeMin = 0.005;
-const maskMultiplier = 35;
+const maskMultiplier = 27;
 
 let linkAnimated = false;
 

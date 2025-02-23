@@ -8,6 +8,7 @@
     letter-spacing: -0.05em;
     line-height: normal;
     font-family: 'Gabarito', Helvetica, sans-serif;
+    text-align: center;
    
     
 }
@@ -16,7 +17,7 @@
 {
    
     font-size: clamp(0.08rem, 2.6vw,20rem);
-    text-align: left;
+ 
     font-weight: 600;
     font-family: 'Poppins', Helvetica, sans-serif;
     display: inline-block;
@@ -30,15 +31,17 @@
     font-weight: 700;
     display: inline-block;
     
+    
 }
 
 
 .heading.tagline
 {
-    font-size: clamp(0.1rem, 7vw,20rem);
+    font-size: clamp(0.1rem, 6vw,20rem);
     font-weight: 600;
     line-height: 0.7;
     display: inline-block;
+    
 }
 
 
@@ -55,7 +58,7 @@
   
     box-sizing: content-box;
     gap: clamp(0.01rem, 0.5%, 15rem);
-    text-align: left;
+    text-align: center;
     
 }
 

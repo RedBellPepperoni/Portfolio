@@ -7,7 +7,7 @@ body
   margin: 0;
   background-color: var(--background-color);
   background-repeat: repeat;
-  color: var(--text-color);
+ 
   cursor: none;
 }
 
@@ -30,7 +30,7 @@ html{
   
   -webkit-background-clip: text;
   background-clip: text;
-  z-index: 10;
+  z-index: 30;
   
  
 }
@@ -64,7 +64,9 @@ html{
   -webkit-mask-image: var(--mask);
   mask-image: var(--mask);
   pointer-events: none;
-  visibility: hidden;
+  visibility: visible;
+
+  z-index: 50;
   
 }
 
@@ -86,15 +88,30 @@ html{
 {
   padding-top:  clamp(0.2rem, 10%, 25rem) ;
   padding-bottom:  clamp(0.2rem, 3%, 25rem) ;
+
+  z-index: 40;
+  
+   
 }
 .page.exp
 {
+  
   padding-top:  clamp(0.2rem, 2%, 25rem) ;
   padding-bottom:  clamp(0.2rem, 30%, 25rem) ;
+  
 }
 
-  
+.introBG
+{
+  background: var(--background-color);
+  background: rgb(37,37,37);
+background: radial-gradient(circle, rgba(37,37,37,1) 0%, rgba(23,28,29,1) 100%);
+}
 
+.expBG
+{
+  background: var(--background-color);
+}
   
   /** ================================ TOP BAR ======================================**/
 
@@ -125,7 +142,7 @@ html{
   position: absolute;
   inset: 0;
   background-color: transparent;
-  background-image: radial-gradient(transparent 1px, #092327 1px);
+  background-image: radial-gradient(transparent 1px, var(--background-color) 1px);
   background-size: 4px 4px;
   backdrop-filter: blur(3px);
   -webkit-mask-image: linear-gradient(
