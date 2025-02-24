@@ -64,9 +64,9 @@ html{
   -webkit-mask-image: var(--mask);
   mask-image: var(--mask);
   pointer-events: none;
-  visibility: visible;
+  visibility: hidden;
 
-  z-index: 50;
+  z-index: 40;
   
 }
 
@@ -344,6 +344,7 @@ ol {
   display: flex;
   align-items: left;
   pointer-events: none;
+  z-index: 90;
 }
 
 
@@ -356,6 +357,7 @@ ol {
   align-items: flex-start;
   pointer-events: all;
   cursor: none;
+  z-index: 90;
 }
 
 
@@ -370,7 +372,7 @@ ol {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  z-index: 70;
+ 
 
 }
 

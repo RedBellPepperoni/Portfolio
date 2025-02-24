@@ -8,11 +8,11 @@ const maskMultiplier = 27;
 let linkAnimated = false;
 
 let xTo = gsap.quickTo(".hidden-content", "--x", {
-  duration: 0.4,
+  duration: 0.2,
   ease: "power4.out"
 }),
   yTo = gsap.quickTo(".hidden-content", "--y", {
-    duration: 0.4,
+    duration: 0.2,
     ease: "power4.out"
   });
 
@@ -54,23 +54,21 @@ function onFirstMove(e) {
   window.removeEventListener("mousemove", onFirstMove);
   gsap.set(".hidden-content", { autoAlpha: 1, "--x": e.pageX, "--y": e.pageY });
 
-  window.addEventListener("mousemove", (e) => {
-    if (!linkAnimated) {
-      yTo(e.pageY);
-      xTo(e.pageX);
-    }
-  });
+  window.addEventListener("mousemove", onMouseMove);
+  
 }
 
-/***************************************
-    Only for the preview image
-***************************************/
-gsap.set(".hidden-content", {
-  autoAlpha: 1,
-  "--x": window.innerWidth / 3,
-  "--y": window.innerHeight / 2
-});
-tl.progress(0.2);
+function onMouseMove(e){
+  if (!linkAnimated) {
+    yTo(e.pageY);
+    xTo(e.pageX);
+  }
+}
+
+
+
 
 window.addEventListener("resize", updateSize);
 updateSize();
+
+

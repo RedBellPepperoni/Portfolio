@@ -18,16 +18,15 @@
 
 
 
-
 .experience
 {
   position: relative;
-  font-size: clamp(0.02rem, 4vw, 20rem);
+  font-size: clamp(0.02rem, 2vw, 20rem);
   font-family: "Inter", Helvetica, sans-serif;
     font-weight: 600;
     text-align: left;
     color: var(--accent-color);
-    padding: clamp(0.01rem, 6vw,20rem) 0; 
+    padding: clamp(0.01rem, 2vw,20rem) 0; 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,6 +42,7 @@
   display: inline;
   width: 100%;
   height: 100%;
+
 }
 
 .tabs {
@@ -73,8 +73,11 @@
 .tab-content-wrapper
 {
   display: flex;
+  position: relative;
   
 }
+
+
 
   .experiencecontainer
   {
@@ -88,7 +91,8 @@
     font-weight: 600;
     font-size: clamp(0.01rem, 1vw, 20rem);
     padding: clamp(0.01rem, 3vw,20rem) 0; 
-   gap: clamp(0.02rem, 5vw,20rem);
+   
+   
   }
 
 
@@ -107,16 +111,45 @@
     position: relative;
     display: inline-flex;
     flex-direction: row;
+  
     
-    
+  }
+
+  .sectionspacer
+  {
+    display: block;
+    width: 100%;
+    height: clamp(0.01rem, 0.1vw,30rem);
+    background-color: rgba(0, 128, 167, 0.256);
+    margin-bottom: clamp(0.02rem, 1vw,20rem);
+  }
+
+  .sectionspacer.mid
+  {
+    margin-top:  clamp(0.02rem, 1vw,20rem);
   }
 
   .workplace
   {
     font-size: clamp(0.01rem, 1.5vw, 20rem);
     padding: clamp(0.01rem, 0.2vw ,20rem) 0;
+    background: transparent;
+    display: inline-flex;
+    cursor: none;
    
+
   }
+
+
+
+  .linkicon
+  {
+    fill: var(--accent-color);
+    height: clamp(.01rem, 1.4vw, 20rem);
+    padding-left: clamp(00.1rem,0.4vw,20rem);
+  }
+  
+
 
   .worktitle
   {
@@ -143,7 +176,7 @@
     text-wrap-mode: wrap;
     display: flex;
     flex-direction: column;
-    color : var(--color-textSecondary);
+    color: var(--color-extraOne);
     
     
   }
