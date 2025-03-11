@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 3 copy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.07 954.62">
+  <defs>
+    <style>
+      .p {
+        fill: #0e4759;
+      }
+
+      .q, .r {
+        fill: #3c4c56;
+      }
+
+      .q, .s {
+        stroke-width: 5px;
+      }
+
+      .q, .s, .t {
+        stroke: #3d4c56;
+        stroke-miterlimit: 10;
+      }
+
+      .u {
+        fill: #2781aa;
+      }
+
+      .v {
+        fill: #fff;
+      }
+
+      .w {
+        fill: url(#d);
+        opacity: .97;
+      }
+
+      .x {
+        fill: url(#g);
+      }
+
+      .y {
+        fill: url(#m);
+      }
+
+      .z {
+        fill: #09313f;
+      }
+
+      .aa {
+        fill: #a2d6f4;
+      }
+
+      .s {
+        fill: none;
+      }
+
+      .ab {
+        fill: url(#b);
+      }
+
+      .t {
+        fill: url(#i);
+        stroke-width: 2px;
+      }
+    </style>
+    <linearGradient id="b" x1="486.86" y1="914.33" x2="-19.61" y2="37.09" gradientUnits="userSpaceOnUse">
+      <stop offset=".04" stop-color="#6fa7da"/>
+      <stop offset=".16" stop-color="#75a6d8" stop-opacity=".99"/>
+      <stop offset=".31" stop-color="#88a3d4" stop-opacity=".98"/>
+      <stop offset=".36" stop-color="#8fa3d3" stop-opacity=".97"/>
+      <stop offset=".95" stop-color="#05465d" stop-opacity=".97"/>
+    </linearGradient>
+    <linearGradient id="d" x1="432.71" y1="153.89" x2="58.7" y2="777.54" gradientUnits="userSpaceOnUse">
+      <stop offset=".14" stop-color="#6fa7da"/>
+      <stop offset=".31" stop-color="#75a6d8" stop-opacity=".99"/>
+      <stop offset=".53" stop-color="#88a3d4" stop-opacity=".98"/>
+      <stop offset=".59" stop-color="#8fa3d3" stop-opacity=".97"/>
+      <stop offset=".96" stop-color="#05465d" stop-opacity=".97"/>
+    </linearGradient>
+    <linearGradient id="g" x1="53.35" y1="829.58" x2="443.41" y2="829.58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7b99c6" stop-opacity=".97"/>
+      <stop offset=".4" stop-color="#1d6482" stop-opacity=".97"/>
+      <stop offset="1" stop-color="#8fa3d3" stop-opacity=".97"/>
+    </linearGradient>
+    <linearGradient id="i" x1="437.17" y1="676" x2="136.37" y2="924.32" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8fa3d3" stop-opacity=".97"/>
+      <stop offset=".04" stop-color="#7b99c6" stop-opacity=".97"/>
+      <stop offset=".22" stop-color="#1d6482" stop-opacity=".97"/>
+      <stop offset=".83" stop-color="#02001a"/>
+    </linearGradient>
+    <linearGradient id="m" x1="68.49" y1="470.06" x2="374.64" y2="315.81" gradientUnits="userSpaceOnUse">
+      <stop offset=".11" stop-color="#f6f6ce"/>
+      <stop offset=".5" stop-color="#efedd3"/>
+      <stop offset=".79" stop-color="#e8e4d9"/>
+    </linearGradient>
+  </defs>
+  <path id="c" data-name="Phone_Border" class="ab" d="M398.01,954.62H61.07c-33.73,0-61.07-27.34-61.07-61.07V61.04C0,27.31,27.34-.03,61.07-.03h346.94c33.73,0,61.07,27.34,61.07,61.07v822.51c0,39.25-31.82,71.07-71.07,71.07Z"/>
+  <rect id="e" data-name="Phone_Base" class="w" x="16.26" y="-.03" width="452.81" height="941.62" rx="56.53" ry="56.53"/>
+  <path id="f" data-name="Screen_Border" class="p" d="M408.43,674.94H76.91c-7.66,0-13.86-6.48-13.86-14.46V112.5c0-7.99,6.21-14.46,13.86-14.46h331.52c7.66,0,13.86,6.48,13.86,14.46v547.97c0,7.99-6.21,14.46-13.86,14.46Z"/>
+  <path id="h" data-name="Button_Base" class="x" d="M396.14,910.37H100.62c-61.35-1.7-44.59-74.9-46.62-114.97,0-25.75,20.87-46.62,46.62-46.62h295.52c25.75,0,46.62,20.87,46.62,46.62-1.9,39.7,14.43,113.69-46.62,114.97Z"/>
+  <path id="j" data-name="Button_Base" class="t" d="M398.43,910.37H102.91c-61.35-1.7-44.59-74.9-46.62-114.97,0-25.75,20.87-46.62,46.62-46.62h295.52c25.75,0,46.62,20.87,46.62,46.62-1.9,39.7,14.43,113.69-46.62,114.97Z"/>
+  <path id="k" data-name="Button_Center_border" class="r" d="M275.82,892.17c-34.1.14-82.13,7.17-84.3-40.89-.14-34.1-7.17-82.13,40.89-84.29,34.1-.14,82.13-7.17,84.29,40.89.14,34.1,7.17,82.13-40.89,84.3Z"/>
+  <path id="l" data-name="Button_Center" class="aa" d="M272.87,884.18c-29.84.2-71.46,6.04-73.35-35.86-.2-29.84-6.04-71.46,35.86-73.35,29.84-.2,71.46-6.04,73.35,35.86.2,29.84,6.04,71.46-35.85,73.35Z"/>
+  <path class="y" d="M391.77,662.56l-315.01-.1c-7.63,0-13.81-6.48-13.81-14.47l.18-523.12c0-7.99,6.19-14.46,13.82-14.46l315.01.1c7.63,0,13.81,6.48,13.81,14.47l-.18,523.12c0,7.99-6.19,14.46-13.82,14.46Z"/>
+  <path id="n" data-name="Speaker_Border" class="z" d="M331.88,64.33h-159.81c-11.21.18-11.31-24.24,0-24.12,0,0,159.81,0,159.81,0,11.24-.15,11.26,24.33,0,24.13Z"/>
+  <path id="o" data-name="Speaker_Base" class="u" d="M320.03,62.94h-146.66c-11.16.19-11.16-21.45,0-21.31,0,0,146.66,0,146.66,0,11.16-.13,11.18,21.49,0,21.31Z"/>
+  <line class="s" x1="53.53" y1="829.58" x2="193.21" y2="829.58"/>
+  <line class="q" x1="316.95" y1="829.58" x2="443.05" y2="829.58"/>
+  <path class="v" d="M414.83,797.77h-63.79c-5.6.08-5.59-10.81,0-10.74,0,0,63.79,0,63.79,0,5.6-.08,5.59,10.81,0,10.74Z"/>
+  <path class="v" d="M157.19,797.77h-63.79c-5.6.08-5.59-10.81,0-10.74,0,0,63.79,0,63.79,0,5.6-.08,5.59,10.81,0,10.74Z"/>
+  <path class="v" d="M110.78,887.74c.42-13.32,10.71-25.79,22.9-30.69,3.86-1.06,13.17-5.08,14.61-.1-.58,1.66,1.01,9.94-1.98,10.04-9.21,1.41-7.87,2.39-14.19-4.71-5.17,2.68-9.6,7.02-12.77,11.92,1.1,1.63,6.08,5.18,5.29,7.57-.4.95-1.38,7.59-2.44,8.05-.53.87-8.51-.02-9.38.12-1.19-.02-2.11-1.01-2.04-2.2Z"/>
+  <path class="v" d="M355.39,875.39c8.91-9.91,24.82-12.8,37.29-8.68,3.45,1.52,13.56,4.88,11.23,9.35-1.51.9-5.64,8.25-7.99,6.39-7.95-4.86-7.56-3.25-7.8-12.75-5.68-1.29-11.86-.83-17.45.87-.21,1.96,1.3,7.88-.85,9.2-.92.46-5.95,4.91-7.06,4.58-.97.33-6.49-5.51-7.24-5.96-.9-.78-.96-2.13-.14-3Z"/>
+</svg>

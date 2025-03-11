@@ -20,4 +20,3 @@ tabs.forEach((tab) => {
 showTab("tab1");
 
 
-  

@@ -29,8 +29,13 @@
     padding: clamp(0.01rem, 2vw,20rem) 0; 
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: left;
+
+    .counter
+    {
+        font-size: clamp(0.02rem, 1vw, 20rem);
+    }
 }
 
 
@@ -70,12 +75,13 @@
   }
 }
 
-.tab-content-wrapper
-{
-  display: flex;
-  position: relative;
-  
-}
+  .tab-content-wrapper
+  {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+  }
 
 
 
@@ -129,6 +135,9 @@
     margin-top:  clamp(0.02rem, 1vw,20rem);
   }
 
+
+/** Work Place Links**/
+
   .workplace
   {
     font-size: clamp(0.01rem, 1.5vw, 20rem);
@@ -136,10 +145,39 @@
     background: transparent;
     display: inline-flex;
     cursor: none;
-   
+    transform: perspective(clamp(00.10rem, 2vw,20rem)) translateZ(0);
+    position: relative;
+    overflow: hidden;
 
   }
 
+  .workplace::before
+  {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--accent-color);
+    height: clamp(00.10rem, 0.25vw,20rem);
+    -webkit-transform: translateY(clamp(00.10rem, 1vw,20rem));
+    transform: translateY(clamp(00.10rem, 1vw,20rem));
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+
+  .workplace:hover::before,
+  .workplace:active::before,
+  .workplace:focus::before
+  {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 
 
   .linkicon

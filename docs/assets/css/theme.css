@@ -18,7 +18,7 @@
     --shadow-color: #00000033;
     --cursor-color:  #1B5563;
 
-    --tab-inactive : #175263;
+    --tab-inactive : #81ADC8;
     --tab-hovered : #247a91;
 
     /* --background-color: #081E21;
@@ -31,6 +31,11 @@
     --grey-text: #cfd8e2;
     --shadow-color: #00000033;
     --cursor-color:  #1B5563; */
+
+
+    --phone-gradient-screen : radial-gradient(50% 50% at 50% 50%, #8197d6, #3f4158);
+    --phone-gradient-ui : linear-gradient(180deg, #dcecea, #9399b8);
+    --phone-text:  #081903;
   }
   
 

@@ -23,13 +23,27 @@
 
 @font-face {
 
-  src: url("assets/fonts/gabarito/Gabarito-VariableFont_wght.ttf");
+  src: url("assets/fonts/gabarito/Gabarito-VariableFont_wght.ttf"); 
+
+ 
   font-family: 'Gabarito', 'sans-serif';
   font-style: normal;
 
 }
 
+/* ============================== JERSEY 15 ===========================================*/
 
+
+
+@font-face {
+  font-family: 'Jersey15';
+ 
+  src: url("/assets/fonts/jersey/Jersey15-Regular.woff2") format('woff2');
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* =========================== POPPINS ==============================================*/
 

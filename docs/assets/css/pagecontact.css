@@ -1,0 +1,119 @@
+@import "./theme.css";
+
+
+.page-contact
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  
+    box-sizing: content-box;
+    gap: clamp(0.01rem, 0.5%, 15rem);
+    text-align: left;
+    
+}
+
+.text-container
+{
+    position: relative;
+    width: 100%;
+    overflow: auto;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  
+    box-sizing: content-box;
+    gap: clamp(0.01rem, 0.5%, 15rem);
+    text-align: left;
+}
+
+.contact
+{
+    position: relative;
+    font-size: clamp(0.02rem, 2vw, 20rem);
+    font-family: "Inter", Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: left;
+    color: var(--accent-color);
+    padding: clamp(0.01rem, 2vw,20rem) 0; 
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: left;
+
+    .counter
+    {
+        font-size: clamp(0.02rem, 1vw, 20rem);
+    }
+}
+
+.contact-container
+{
+    position: relative;
+    font-family: "Inter", Helvetica, sans-serif;
+    padding: clamp(0.01rem, 2vw,20rem) 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+}
+
+
+.email-link
+{
+    font-size: clamp(0.02rem, 4vw, 20rem);
+    color: var(--color-extraOne);
+}
+
+.message-text
+{
+    font-size: clamp(0.02rem, 4vw, 20rem);
+    color: var(--accent-color);
+}
+
+
+.secret-text
+{
+    padding: clamp(.01rem, 2vw,20rem) 0;
+    font-size: clamp(0.02rem, 2vw, 20rem);
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+
+.display-layout
+{
+    position: relative;
+    width: 80%;
+    padding: 0 clamp(0.01rem, 1vw,20rem); 
+    display: flex ;
+    justify-content: center;
+}
+
+.spacer-layout
+{
+    position: relative;
+    padding: 0 clamp(0.01rem, 2vw,20rem); 
+    width: 10%;
+}
+
+.arrow-container
+{
+    position: relative;
+  
+   
+    display: inline-flex;
+    justify-self: left;
+   
+    width: 30%;
+    height: 30%;
+}
+
+.arrow{
+    fill: var(--accent-color);
+}

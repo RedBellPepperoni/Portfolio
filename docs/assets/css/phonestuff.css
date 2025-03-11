@@ -1,0 +1,161 @@
+@import "./theme.css";
+
+
+.phone-container
+{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    padding: clamp(0.01rem, 1vw,20rem) clamp(0.01rem, 1vw,20rem); 
+    display: inline-flex ;
+    justify-content: center;
+    cursor: none;
+    pointer-events: all;
+
+}
+
+.phone-transform
+{
+    rotate: 0 0 1 -5deg; 
+}
+
+
+.phone-hover
+{
+    position: absolute;
+    z-index: 30;
+    cursor: none;
+    pointer-events: all;
+    display: flex;  
+    height: 100%;
+    width: 45%;
+   
+}
+
+
+.phone-back
+{
+    position: absolute;
+    z-index: 30;
+    cursor: none;
+    pointer-events: all;
+    transform: translate(calc(clamp(0.2rem, 1.35vw, 20rem) * -1), 0);
+    height: 65%;
+    transition: 150ms cubic-bezier(0, 0, 0.58, 1),  150ms cubic-bezier(0, 0, 0.58, 1);
+ 
+}
+
+.phone-hover:hover .phone-back
+{   
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), 150ms cubic-bezier(0, 0, 0.58, 1);
+    transform: translate(calc(clamp(0.2rem, 1.35vw, 20rem) * -1), calc(clamp(0.2rem, 12vw, 20rem)));
+}
+
+
+.phone-front
+{
+    position: absolute;
+    z-index: 50;
+    pointer-events: none;
+    
+    height: 65%;
+}
+
+
+/** POP UP display Stufff **/
+
+
+
+
+
+#phone-popUp
+{  
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--phone-gradient-screen);
+    border-radius: clamp(0.02rem, 2vw, 20rem);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 45vw;
+    height: 50vw;
+    
+  
+    z-index: 9999;
+    animation: slideIn 0.6s ease;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translate(-50%, -20%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+  
+  
+
+
+
+.display-container
+{ 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.display-container.top
+{
+    padding: clamp(0.01rem, 2vw,20rem) clamp(0.01rem, 2vw,20rem);
+}
+
+.display-container.main
+{
+    padding: clamp(0.01rem, 0.4vw,20rem) clamp(0.01rem, 1vw,20rem);
+    flex-direction: column;
+}
+
+.display-container.bot
+{
+
+    padding: clamp(0.01rem, 0.4vw,20rem) clamp(0.01rem, 2vw,20rem);
+
+}
+
+
+.display-input
+{
+    display: flex;
+    padding: clamp(0.01rem, 0.4vw,20rem) clamp(0.01rem, 1vw,20rem);
+    
+}
+
+.phone-textfield
+{
+    padding: clamp(0.01rem, 1vw,20rem) clamp(0.01rem, 1vw,20rem);
+    border-radius:  clamp(0.01rem, 1vw, 20rem);
+    border: clamp(0.01rem, 0.2vw, 20rem) solid  #d9d9d9;;
+    background: var(--phone-gradient-ui);
+    position: relative;
+    width: 100%;
+    display: inline;
+
+    font-family: 'Jersey15' , sans-serif;
+    font-size: clamp(0.02rem, 4vw,20rem);
+    
+}
+
+.phone-textfield.multiline
+{
+    height: clamp(0.2rem, 30vw, 20rem);
+}
+
