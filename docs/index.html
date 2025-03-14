@@ -470,7 +470,7 @@
 
     
     <!-- The Popup for the Phone Display -->
-    <div id="phone-popUp" class="hidden">
+    <dialog id="phone-popUp" class="">
 
         <!-- TopContainer : The Container for the Display/Screen (for battery and icons)-->
         <div class="display-container top">
@@ -506,11 +506,11 @@
 
          <!-- BotContainer : The Container for the UI buttons (for Sen and bak and Options)-->
         <div class="display-container bot">
-           <div class="phone-button">Options</div>
+           <div class="phone-button">More</div>
            <div class="phone-button send">Send</div>
-           <div class="phone-button" id="close-popup"> &nbsp; &nbsp; Back</div>
+           <button class="phone-button" id="closeDialog">Back</button>
         </div><!-- Endof BotContainer)-->
-    </div>
+    </dialog>
 
 </div>
 

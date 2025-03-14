@@ -3,18 +3,23 @@ const colorRed = '#FF3D3D';
 const colorGreen = 'green';
 
 
-document.getElementById("open-popup").addEventListener("click", function() {
-    document.getElementById("phone-popUp").classList.toggle("hidden");
-    addOverlay(); // Call function to add overlay
-  });
+// document.getElementById("open-popup").addEventListener("click", function() {
+//     document.getElementById("phone-popUp").classList.toggle("hidden");
+//     addOverlay(); // Call function to add overlay
+//   });
   
-  document.getElementById("close-popup").addEventListener("click", function() {
-    document.getElementById("phone-popUp").classList.add("hidden");
-    removeOverlay(); // Call function to remove overlay
-  });
+//   document.getElementById("close-popup").addEventListener("click", function() {
+//     document.getElementById("phone-popUp").classList.add("hidden");
+//     removeOverlay(); // Call function to remove overlay
+//   });
   
 
+const openDialog = document.getElementById("open-popup");
+const dialog = document.getElementById("phone-popUp");
+const closeDialog = document.getElementById("closeDialog");
 
+openDialog.addEventListener("click", () => dialog.showModal());
+closeDialog.addEventListener("click", () => dialog.close());
 
 
     document.querySelectorAll('.phone-textfield input').forEach(input => 
