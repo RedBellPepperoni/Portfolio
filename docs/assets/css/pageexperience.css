@@ -151,34 +151,6 @@
 
   }
 
-  .workplace::before
-  {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--accent-color);
-    height: clamp(00.10rem, 0.25vw,20rem);
-    -webkit-transform: translateY(clamp(00.10rem, 1vw,20rem));
-    transform: translateY(clamp(00.10rem, 1vw,20rem));
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-
-  .workplace:hover::before,
-  .workplace:active::before,
-  .workplace:focus::before
-  {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
 
   .linkicon
   {
