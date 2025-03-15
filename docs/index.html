@@ -204,11 +204,11 @@
                     <div class="display-layout">
                         <div class="spacer-layout"></div>
 
-                        <div class="arrow-container">
+                     <!--<div class="arrow-container">
                             <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 306 86" preserveAspectRatio="xMidYMid meet" >
                                 <path class="arrow" d="M6.63661 1.6982C5.36536 0.242039 3.15436 0.0921406 1.6982 1.36339C0.242039 2.63464 0.0921406 4.84564 1.36339 6.3018L6.63661 1.6982ZM305.443 35.6279C305.79 33.7262 304.53 31.9036 302.628 31.5568L271.639 25.9059C269.737 25.5591 267.915 26.8196 267.568 28.7212C267.221 30.6228 268.481 32.4455 270.383 32.7923L297.929 37.8153L292.906 65.3611C292.559 67.2627 293.82 69.0854 295.721 69.4322C297.623 69.779 299.446 68.5185 299.792 66.6169L305.443 35.6279ZM1.36339 6.3018C43.1443 54.1599 93.3241 79.7725 145.938 84.486C198.516 89.1965 253.192 73.0085 303.991 37.8787L300.009 32.1213C250.308 66.4915 197.234 82.0535 146.562 77.514C95.9259 72.9775 47.3557 48.3401 6.63661 1.6982L1.36339 6.3018Z" fill="white"/>
                             </svg>
-                        </div>
+                        </div>-->  
                     </div>
                 </div>
 
@@ -385,16 +385,29 @@
 
             <div class="page-contact"> 
 
-                <div class="contact">
-                    <span class="counter">03. &nbsp;</span> <span>Say Hello !</span>
+                <div class="text-container">
+                    <div class="contact hovertext">
+                        <span class="counter">03. &nbsp;</span> <span>Say Hello !</span>
+                    </div>
+
+                    <div class="contact-container">
+                        <div class="email-link hovertext"> @email me </div>
+                        <div class="message-text hovertext"> or send a message</div>
+                    </div>   
+
+                    <div class="display-layout">
+                        <div class="spacer-layout"></div>
+
+                        <div class="arrow-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 306 86" preserveAspectRatio="xMidYMid meet" >
+                                <path class="arrow" d="M6.63661 1.6982C5.36536 0.242039 3.15436 0.0921406 1.6982 1.36339C0.242039 2.63464 0.0921406 4.84564 1.36339 6.3018L6.63661 1.6982ZM305.443 35.6279C305.79 33.7262 304.53 31.9036 302.628 31.5568L271.639 25.9059C269.737 25.5591 267.915 26.8196 267.568 28.7212C267.221 30.6228 268.481 32.4455 270.383 32.7923L297.929 37.8153L292.906 65.3611C292.559 67.2627 293.82 69.0854 295.721 69.4322C297.623 69.779 299.446 68.5185 299.792 66.6169L305.443 35.6279ZM1.36339 6.3018C43.1443 54.1599 93.3241 79.7725 145.938 84.486C198.516 89.1965 253.192 73.0085 303.991 37.8787L300.009 32.1213C250.308 66.4915 197.234 82.0535 146.562 77.514C95.9259 72.9775 47.3557 48.3401 6.63661 1.6982L1.36339 6.3018Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="contact-container">
-                    <div class="email-link "> @email me </div>
-                    <div class="message-text "> or send a message</div>    
-                    <div class="secret-text"> Click on the <br>Phone!!!</div>  
-                </div>   
-
+             
+              
             </div> <!-- Page Contact-->>
 
         </div> <!-- Page Link : Contact-->>
@@ -472,44 +485,50 @@
     <!-- The Popup for the Phone Display -->
     <dialog id="phone-popUp" class="">
 
-        <!-- TopContainer : The Container for the Display/Screen (for battery and icons)-->
-        <div class="display-container top">
+        <div class="phone-display-container phone">
+
+            <!-- TopContainer : The Container for the Display/Screen (for battery and icons)-->
+            <div class="display-container top">
+                
+            </div>   <!-- Endof TopContainer)-->
+
+            <!-- MidContainer :The Container for the Form data (Email, Name, And Message)-->
+            <form id="contact" action="" method="post" class="display-container main">
+               
             
-        </div>   <!-- Endof TopContainer)-->
+                    <div class="phone-textfield">
+                        <label class="inputLabel"> NAME:</label>
+                        <input type="name" name="name" id="name" placeholder="Your name" autocomplete="on" required>  
+                    </div>
+                    <span class="validator valid_info_name"> &nbsp;</span>
 
-         <!-- MidContainer :The Container for the Form data (Email, Name, And Message)-->
-        <form id="contact" action="" method="post">
-            <div class="display-container main">
-           
-                <div class="phone-textfield">
-                    <label class="inputLabel"> NAME:</label>
-                    <input type="name" name="name" id="name" placeholder="Your name" autocomplete="on" required>  
-                </div>
-                <span class="validator valid_info_name"> &nbsp;</span>
+                    <div class="phone-textfield">
+                        <label class="inputLabel"> EMAIL:</label>
+                        <input type="email" name="email" id="email" placeholder="Your email address" autocomplete="on" required>
+                    
+                    </div>
+                    <span class=" validator valid_info_email"> &nbsp;</span>
 
-                <div class="phone-textfield">
-                    <label class="inputLabel"> EMAIL:</label>
-                    <input type="email" name="email" id="email" placeholder="Your email address" autocomplete="on" required>
-                   
-                </div>
-                <span class=" validator valid_info_email"> &nbsp;</span>
+                    <div class="phone-textfield multiline">
+                        <label class="inputLabel"> MESSAGE:</label>
+                        <textarea name="message" id="message" placeholder="Your message"></textarea>
+                    
+                    </div>
+                    <span class="valid_info_message"></span>
+                
+                
+            </form> <!-- Endof MidContainer)-->
 
-                <div class="phone-textfield multiline">
-                    <label class="inputLabel"> MESSAGE:</label>
-                    <textarea name="message" id="message" placeholder="Your message"></textarea>
-                   
-                </div>
-                <span class="valid_info_message"></span>
-            
-            </div>
-        </form> <!-- Endof MidContainer)-->
+            <!-- BotContainer : The Container for the UI buttons (for Sen and bak and Options)-->
+            <div class="display-container bot">
+                <div class="phone-button">More</div>
+                <div class="phone-button send">Send</div>
+                <button class="phone-button" id="closeDialog">Back</button>
+            </div><!-- Endof BotContainer)-->
 
-         <!-- BotContainer : The Container for the UI buttons (for Sen and bak and Options)-->
-        <div class="display-container bot">
-           <div class="phone-button">More</div>
-           <div class="phone-button send">Send</div>
-           <button class="phone-button" id="closeDialog">Back</button>
-        </div><!-- Endof BotContainer)-->
+        </div>
+
+
     </dialog>
 
 </div>
