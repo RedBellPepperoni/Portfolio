@@ -1,25 +1,51 @@
 
+import { startGame,quitGame, restartGame } from "./snake.js";
+
 const colorRed = '#FF3D3D';
 const colorGreen = 'green';
 
-
-// document.getElementById("open-popup").addEventListener("click", function() {
-//     document.getElementById("phone-popUp").classList.toggle("hidden");
-//     addOverlay(); // Call function to add overlay
-//   });
-  
-//   document.getElementById("close-popup").addEventListener("click", function() {
-//     document.getElementById("phone-popUp").classList.add("hidden");
-//     removeOverlay(); // Call function to remove overlay
-//   });
-  
 
 const openDialog = document.getElementById("open-popup");
 const dialog = document.getElementById("phone-popUp");
 const closeDialog = document.getElementById("closeDialog");
 
+
 openDialog.addEventListener("click", () => dialog.showModal());
 closeDialog.addEventListener("click", () => dialog.close());
+
+const GameDisplay = document.getElementById("phonegame");
+const PhoneDisplay =  document.getElementById("phonedisplay");
+
+const openGame = document.getElementById("openGame");
+const closeGame = document.getElementById("closeGame");
+const quitGameDialog = document.getElementById("quitDialog");
+const restart =document.getElementById("resetGame");
+
+
+restart.addEventListener("click", () => restartGame());
+function OpenGame()
+{
+    PhoneDisplay.classList.add("hidden");
+    GameDisplay.classList.remove("hidden");
+    startGame();
+};
+
+function CloseGame()
+{
+    PhoneDisplay.classList.remove("hidden");
+    GameDisplay.classList.add("hidden");
+};
+
+
+quitGameDialog.addEventListener("click", () =>{
+    quitGame();
+    CloseGame();
+    dialog.close();
+});
+
+openGame.addEventListener("click", OpenGame);
+closeGame.addEventListener("click", CloseGame);
+
 
 
     document.querySelectorAll('.phone-textfield input').forEach(input => 

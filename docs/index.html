@@ -485,11 +485,53 @@
     <!-- The Popup for the Phone Display -->
     <dialog id="phone-popUp" class="">
 
-        <div class="phone-display-container phone">
+        <div class="phone-display-container phone" id="phonedisplay">
 
             <!-- TopContainer : The Container for the Display/Screen (for battery and icons)-->
             <div class="display-container top">
                 
+                <svg class="icon" id="icon_signal" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.62 40.76">
+                    <defs>
+                     
+                    </defs>
+                    <g>
+                      <path class="b" d="M31.85,0c.91,0,.55,1.45,0,2l-14.09,14.09c-.55.55-1.45.55-2,0L1.68,2c-.55-.55-.98-2,0-2h30.17Z"/>
+                      <rect class="b" x="14.01" y="11.33" width="5.47" height="29.43" rx=".67" ry=".67"/>
+                    </g>
+                    <rect class="b" x="24.77" y="18.76" width="6" height="22" rx=".87" ry=".87"/>
+                    <rect class="b" x="34.11" y="11.33" width="6" height="29.43" rx=".87" ry=".87"/>
+                    <rect class="b" x="43.61" y="4.45" width="6" height="36.32" rx=".87" ry=".87"/>
+                    <rect class="b" x="53.11" width="6" height="40.76" rx=".87" ry=".87"/>
+                  </svg>
+
+
+                  <svg class="icon battery" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.62 28.15">
+                    <defs>
+                      <style>
+                        .c {
+                          fill: #231f20;
+                        }
+                  
+                        .d {
+                          fill: #939598;
+                        }
+                  
+                        .e {
+                          fill: #39b54a;
+                        }
+                      </style>
+                    </defs>
+                    <g id="a" data-name="Layer 1">
+                      <path class="c" d="M6.86,28.15c-.68,0-1.27-.23-1.75-.68-.48-.45-.72-1.05-.72-1.79v-5.51c0-.14-.11-.25-.25-.25H.25c-.14,0-.25-.11-.25-.25v-11.2c0-.14.11-.25.25-.25h3.88c.14,0,.25-.11.25-.25V2.45c0-.62.19-1.15.58-1.59C5.49.26,6.3,0,7.09,0h54.06c.74,0,1.34.24,1.79.72.45.48.68,1.06.68,1.75v23.2c0,.77-.23,1.38-.68,1.82-.45.44-1.05.66-1.79.66,0,0-54.3,0-54.3,0ZM6.31,26.15h55.3V2.02H6.31v24.13Z"/>
+                    </g>
+                    <g id="b" data-name="Layer 2">
+                      <rect class="d" x="8.75" y="3.09" width="11" height="22"/>
+                      <rect class="e" x="21.6" y="3.09" width="11" height="22"/>
+                      <rect class="e" x="34.58" y="3.09" width="11" height="22"/>
+                      <rect class="e" x="47.43" y="3.08" width="11" height="22"/>
+                    </g>
+                  </svg>
+               
             </div>   <!-- Endof TopContainer)-->
 
             <!-- MidContainer :The Container for the Form data (Email, Name, And Message)-->
@@ -521,9 +563,79 @@
 
             <!-- BotContainer : The Container for the UI buttons (for Sen and bak and Options)-->
             <div class="display-container bot">
-                <div class="phone-button">More</div>
+                <button class="phone-button" id="openGame">More</button>
                 <div class="phone-button send">Send</div>
                 <button class="phone-button" id="closeDialog">Back</button>
+            </div><!-- Endof BotContainer)-->
+
+        </div>
+
+        <div class="phone-display-container game hidden"  id="phonegame">
+
+              <!-- TopContainer : The Container for the Display/Screen (for battery and icons)-->
+              <div class="display-container top">
+                
+                <svg class="icon" id="icon_signal" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.62 40.76">
+                    <defs>
+                     
+                    </defs>
+                    <g>
+                      <path class="b" d="M31.85,0c.91,0,.55,1.45,0,2l-14.09,14.09c-.55.55-1.45.55-2,0L1.68,2c-.55-.55-.98-2,0-2h30.17Z"/>
+                      <rect class="b" x="14.01" y="11.33" width="5.47" height="29.43" rx=".67" ry=".67"/>
+                    </g>
+                    <rect class="b" x="24.77" y="18.76" width="6" height="22" rx=".87" ry=".87"/>
+                    <rect class="b" x="34.11" y="11.33" width="6" height="29.43" rx=".87" ry=".87"/>
+                    <rect class="b" x="43.61" y="4.45" width="6" height="36.32" rx=".87" ry=".87"/>
+                    <rect class="b" x="53.11" width="6" height="40.76" rx=".87" ry=".87"/>
+                  </svg>
+
+
+                  <div class="game-score">Score &nbsp; <span class="count" id="score"> 00 </span></div>
+
+                  <svg class="icon battery" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.62 28.15">
+                    <defs>
+                      <style>
+                        .c {
+                          fill: #231f20;
+                        }
+                  
+                        .d {
+                          fill: #939598;
+                        }
+                  
+                        .e {
+                          fill: #39b54a;
+                        }
+                      </style>
+                    </defs>
+                    <g id="a" data-name="Layer 1">
+                      <path class="c" d="M6.86,28.15c-.68,0-1.27-.23-1.75-.68-.48-.45-.72-1.05-.72-1.79v-5.51c0-.14-.11-.25-.25-.25H.25c-.14,0-.25-.11-.25-.25v-11.2c0-.14.11-.25.25-.25h3.88c.14,0,.25-.11.25-.25V2.45c0-.62.19-1.15.58-1.59C5.49.26,6.3,0,7.09,0h54.06c.74,0,1.34.24,1.79.72.45.48.68,1.06.68,1.75v23.2c0,.77-.23,1.38-.68,1.82-.45.44-1.05.66-1.79.66,0,0-54.3,0-54.3,0ZM6.31,26.15h55.3V2.02H6.31v24.13Z"/>
+                    </g>
+                    <g id="b" data-name="Layer 2">
+                      <rect class="d" x="8.75" y="3.09" width="11" height="22"/>
+                      <rect class="e" x="21.6" y="3.09" width="11" height="22"/>
+                      <rect class="e" x="34.58" y="3.09" width="11" height="22"/>
+                      <rect class="e" x="47.43" y="3.08" width="11" height="22"/>
+                    </g>
+                  </svg>
+               
+            </div>   <!-- Endof TopContainer)-->
+
+            <!-- MidContainer :The Container for the Form data (Email, Name, And Message)-->
+            <div class="display-container main" id="snakeDisplay">
+               
+               
+                <div id="game-canvas">
+
+                </div>
+                
+            </div> <!-- Endof MidContainer)-->
+
+            <!-- BotContainer : The Container for the UI buttons (for Sen and bak and Options)-->
+            <div class="display-container bot">
+                <button class="phone-button" id="quitDialog">Quit</button>
+                <div class="phone-button send" id="resetGame">Restart</div>
+                <button class="phone-button" id="closeGame">Back</button>
             </div><!-- Endof BotContainer)-->
 
         </div>
@@ -533,6 +645,9 @@
 
 </div>
 
+
+
+
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
@@ -541,8 +656,8 @@
 
 <script src="assets/scripts/tabcontent.js" defer></script>
 
-
-<script src="assets/scripts/phonescript.js" defer></script>
+<script type="module" src="assets/scripts/snake.js" ></script>
+<script type="module" src="assets/scripts/phonescript.js" defer></script>
 <script src="assets/scripts/dateandtime.js" defer></script>
 
 </html>
