@@ -56,17 +56,19 @@ function updateCanvasSize() {
         CTX.lineWidth = 1.1;
         CTX.strokeStyle = "#00000012";
         CTX.shadowBlur = 0;
-        for (let i = 0; i <= cells; i++) {
-          let f = (Width / cells) * i;
-          CTX.beginPath();
-          CTX.moveTo(f, 0);
-          CTX.lineTo(f, Height);
-          CTX.stroke();
-          CTX.beginPath();
-          CTX.moveTo(0, f);
-          CTX.lineTo(Width, f);
-          CTX.stroke();
-          CTX.closePath();
+        for (let i = 0; i <= cells; i++) 
+        {
+            (i === 0 || i === cells) ? ( CTX.strokeStyle = "#000000") : ( CTX.strokeStyle = "#00000012");
+            let f = (Width / cells) * i;
+            CTX.beginPath();
+            CTX.moveTo(f, 0);
+            CTX.lineTo(f, Height);
+            CTX.stroke();
+            CTX.beginPath();
+            CTX.moveTo(0, f);
+            CTX.lineTo(Width, f);
+            CTX.stroke();
+            CTX.closePath();
         }
     }
 
