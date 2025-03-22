@@ -342,7 +342,7 @@ class Snake
 export function startGame()
 {
     updateCanvasSize();
-
+   
     CTX.imageSmoothingEnabled = false;
     Input.processInput();
 

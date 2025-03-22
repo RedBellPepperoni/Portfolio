@@ -10,8 +10,14 @@ const dialog = document.getElementById("phone-popUp");
 const closeDialog = document.getElementById("closeDialog");
 
 
-openDialog.addEventListener("click", () => dialog.showModal());
+openDialog.addEventListener("click", () => {
+    dialog.showModal();
+    
+});
 closeDialog.addEventListener("click", () => dialog.close());
+
+
+
 
 const GameDisplay = document.getElementById("phonegame");
 const PhoneDisplay =  document.getElementById("phonedisplay");
@@ -28,12 +34,14 @@ function OpenGame()
     PhoneDisplay.classList.add("hidden");
     GameDisplay.classList.remove("hidden");
     startGame();
+    
 };
 
 function CloseGame()
 {
     PhoneDisplay.classList.remove("hidden");
     GameDisplay.classList.add("hidden");
+    quitGame();
 };
 
 
@@ -75,6 +83,32 @@ closeGame.addEventListener("click", CloseGame);
         });
         
     });
+
+
+
+
+   
+    const phonePopUp = document.querySelector('#phone-popUp');
+
+  
+    const resizeObserver = new ResizeObserver((entries) => {
+        for (let entry of entries) {
+            const width = entry.contentRect.width; // Get the current width of the element
+            
+        
+            const textSize = `${width * 0.003}rem`; 
+            const gapSize = `${width * 0.002}rem`; 
+
+            entry.target.style.setProperty('--inputfield_text_size', textSize);
+            entry.target.style.setProperty('--gap_size', gapSize);
+        }
+    });
+
+    // Start observing the #phone-popUp element
+    resizeObserver.observe(phonePopUp);
+
+
+
     
 
     document.addEventListener('DOMContentLoaded', function () 

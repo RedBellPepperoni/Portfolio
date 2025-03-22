@@ -5,16 +5,32 @@
   @font-face 
   {
     src: url("inter/Inter-VariableFont.ttf");
-    font-family: 'Inter' ,'sans-serif';
+    font-family: Inter ,sans-serif;
     font-style: normal;
   }
 
   @font-face 
   {
     src: url("inter/Inter-Italic-VariableFont.ttf");
-    font-family: 'Inter' ,'sans-serif';
+    font-family: Inter ,sans-serif;
     font-style: italic;
   }
+
+
+/* =========================== CAVEAT ==============================================*/
+
+@font-face 
+{
+  font-family: 'Caveat';
+  src: url('caveat/CaveatVariableFont_wght.eot');
+  src: url('caveat/CaveatVariableFont_wght.eot') format('embedded-opentype'),
+       url('caveat/CaveatVariableFont_wght.woff2') format('woff2'),
+       url('caveat/CaveatVariableFont_wght.woff') format('woff'),
+       url('caveat/CaveatVariableFont_wght.ttf') format('truetype'),
+       url('caveat/CaveatVariableFont_wght.svg#CaveatVariableFont_wght') format('svg');
+}
+
+
 
 
 /* =========================== GABARITO ==============================================*/

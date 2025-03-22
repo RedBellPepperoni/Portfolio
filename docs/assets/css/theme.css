@@ -4,22 +4,23 @@
 
 
 :root.dark {
-    --background-color: #171C1D;
-    --background-dark-color: #b9b6ab;
-    --color-textPrimary: #CA3C25;
-    --color-textSecondary: #D6AF9B;
-    --accent-color: #FDFCDC;
-    --color-extraOne: #81ADC8;
-    --color-extraTwo: #0081A7;
+    --background-color:              #171C1D;
+    --background-dark-color:         #b9b6ab;
+    --color-textPrimary:             #CA3C25;
+    --color-textSecondary:           #D6AF9B;
+    --accent-color:                  #FDFCDC;
+    --color-extraOne:                #81ADC8;
+    --color-extraTwo:                #0081A7;
+    --color-white:                   #e9ebed;
 
-    --link-unvisited-color: #4750D0;
-    --grey-color: #303f50;
-    --grey-text: #cfd8e2;
-    --shadow-color: #00000033;
-    --cursor-color:  #1B5563;
+    --link-unvisited-color:          #4750D0;
+    --grey-color:                    #303f50;
+  
+    --shadow-color:                  #00000033;
+    --cursor-color:                  #1B5563;
 
-    --tab-inactive : #81ADC8;
-    --tab-hovered : #247a91;
+    --tab-inactive :                 #81ADC8;
+    --tab-hovered :                  #247a91;
 
     /* --background-color: #081E21;
     --background-dark-color: #b9b6ab;
@@ -33,9 +34,25 @@
     --cursor-color:  #1B5563; */
 
 
-    --phone-gradient-screen : radial-gradient(50% 50% at 50% 50%, #8197d6, #3f4158);
-    --phone-gradient-ui : linear-gradient(180deg, #dcecea, #9399b8);
-    --phone-text:  #081903;
+    --phone-gradient-screen :        radial-gradient(50% 50% at 50% 50%, #8197d6, #3f4158);
+    --phone-gradient-ui :            linear-gradient(180deg, #dcecea, #9399b8);
+    --phone-text:                    #081903;
+
+    --moodboard-white :              #f6f6f6  ;
+    --moodboard-grey :              #7a7a7a  ;
+
+    --tape-white:                    #ebeae4e6;
+
+    --stickynote-lightYellow:        #FFF9B7;
+    --stickynote-Yellow:             #F5D331;
+    --stickynote-Orange:             #FFA252;
+    --stickynote-lightBlue:          #ACD0F6;
+    --stickynote-Blue:               #76DBFA;
+    --stickynote-Purple:             #A4AFFE;
+
+    --stickynote-Green:              #CDE161;
+    
+
   }
   
 
@@ -63,6 +80,10 @@
 
 }
 
+.color-background
+{
+    color: var(--background-color);
+}
 
 .color-accent
 {
@@ -99,3 +120,38 @@
     color: var(--color-black);
 }
 
+
+.sticky-lightYellow
+{
+    background-color: var(--stickynote-lightYellow);
+}
+
+.sticky-yellow
+{
+    background-color: var(--stickynote-Yellow);
+}
+
+.sticky-orange
+{
+    background-color: var(--stickynote-Orange);
+}
+
+.sticky-lightBlue
+{
+    background-color: var(--stickynote-lightBlue);
+}
+
+.sticky-blue
+{
+    background-color: var(--stickynote-Blue);
+}
+
+.sticky-purple
+{
+    background-color: var(--stickynote-Purple);
+}
+
+.sticky-green
+{
+    background-color: var(--stickynote-Green);
+}
