@@ -50,96 +50,95 @@
 
 
 :root.light {
-  --background-color: #FFFDF6;
-  --background-dark-color: #b9b6ab;
-  --color-textPrimary: #FF156B;
-  --color-textSecondary: #1B5563;
-  --accent-color: #4750D0;
-  --link-unvisited-color: #4750D0;
-  --grey-color: #303f50;
-  --grey-text: #cfd8e2;
-  --shadow-color: #00000033;
-  --cursor-color:  #1B5563;
+  --background-color:               #FFFDF6;
+  --background-dark-color:          #b9b6ab;
+  --color-textPrimary:              #FF156B;
+  --color-textSecondary:            #1B5563;
+  --accent-color:                   #4750D0;
+  --link-unvisited-color:           #4750D0;
+  --grey-color:                     #303f50;
+  --grey-text:                      #cfd8e2;
+  --shadow-color:                   #00000033;
+  --cursor-color:                   #1B5563;
+  --color-black:                    #02061b;
+  --color-birch:                    #ded7cf;
 
-  --color-black:#02061b;
-  --color-birch: #ded7cf;
-
-  --mask-circle: #C02B1B;
+  --mask-circle:                    #C02B1B;
 
 }
 
 .color-background
 {
-    color: var(--background-color);
+    color:                          var(--background-color);
 }
 
 .color-accent
 {
-    color: var(--accent-color);
+    color:                          var(--accent-color);
 }
 
 .color-text-primary
 {
-    color: var(--color-textPrimary);
+    color:                          var(--color-textPrimary);
 }
 
 .color-text-secondary
 {
-    color: var(--color-textSecondary);
+    color:                          var(--color-textSecondary);
 }
 
 .color-extra-one
 {
-    color: var(--color-extraOne);
+    color:                          var(--color-extraOne);
 }
 
 
 .color-extra-two
 {
-    color: var(--color-extraTwo);
+    color:                          var(--color-extraTwo);
 }
 .color-maskOne
 {
-    color: var(--color-black);
+    color:                          var(--color-black);
 }
 
 .color-maskTwo
 {
-    color: var(--color-black);
+    color:                          var(--color-black);
 }
 
 
 .sticky-lightYellow
 {
-    background-color: var(--stickynote-lightYellow);
+    background-color:               var(--stickynote-lightYellow);
 }
 
 .sticky-yellow
 {
-    background-color: var(--stickynote-Yellow);
+    background-color:               var(--stickynote-Yellow);
 }
 
 .sticky-orange
 {
-    background-color: var(--stickynote-Orange);
+    background-color:               var(--stickynote-Orange);
 }
 
 .sticky-lightBlue
 {
-    background-color: var(--stickynote-lightBlue);
+    background-color:               var(--stickynote-lightBlue);
 }
 
 .sticky-blue
 {
-    background-color: var(--stickynote-Blue);
+    background-color:               var(--stickynote-Blue);
 }
 
 .sticky-purple
 {
-    background-color: var(--stickynote-Purple);
+    background-color:               var(--stickynote-Purple);
 }
 
 .sticky-green
 {
-    background-color: var(--stickynote-Green);
+    background-color:               var(--stickynote-Green);
 }

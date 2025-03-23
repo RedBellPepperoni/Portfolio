@@ -76,17 +76,19 @@ html{
 {
 
   display:                  flex;
-  height:                   clamp(2rem, 40vw, 300rem);
+  min-height:               clamp(2rem, 40vw, 300rem);
+  height:                   auto;
   align-items:              flex-start;
   justify-content:          flex-start ;
    
-  padding-right:            clamp(0.2rem, 10%, 25rem);
-  padding-left:             clamp(0.2rem, 20%, 25rem);
+
     
 }
 
 .page.intro
 {
+  padding-right:            clamp(0.2rem, 10%, 25rem);
+  padding-left:             clamp(0.2rem, 20%, 25rem);
   padding-top:              clamp(0.2rem, 10%, 25rem);
   padding-bottom:           clamp(0.2rem, 3%, 25rem);
   z-index:                  40; 
@@ -96,9 +98,26 @@ html{
 {
   
   padding-top:              clamp(0.2rem, 2%, 25rem);
-  padding-bottom:           clamp(0.2rem, 30%, 25rem);
+  padding-right:            clamp(0.2rem, 10%, 25rem);
+  padding-left:             clamp(0.2rem, 20%, 25rem);
+ 
 }
 
+.page.projects
+{
+  padding-top:              clamp(0.2rem, 5%, 25rem);
+  padding-bottom:           clamp(0.2rem, 5%, 25rem);
+  padding-right:            clamp(0.2rem, 10%, 25rem);
+  padding-left:             clamp(0.2rem, 20%, 25rem);
+}
+
+
+.page.contact
+{
+  align-items: stretch;
+  padding-right:            clamp(0.2rem, 10%, 25rem);
+  padding-left:             clamp(0.2rem, 20%, 25rem);
+}
 
 .introBackground
 {
@@ -220,7 +239,7 @@ button.resume-btn
   border: clamp(0.12em, 0.2vw, 0.5em) solid var(--color-textSecondary);
   border-radius: clamp(0.12rem , 0.5vw, 1rem);
   padding: 0.85% 2.0%;
-  padding:  clamp(0.5rem, 0.9vw, 2rem) clamp(0.6rem, 2w, 2rem); 
+  padding:  clamp(0.5rem, 0.9vw, 2rem) clamp(0.6rem, 2vw, 2rem); 
   transform-style: preserve-3d;
   transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), 150ms cubic-bezier(0, 0, 0.58, 1);
   cursor: none;
@@ -249,6 +268,8 @@ button.resume-btn
     background: var(--background-color);
     transform: translate(0.05rem, 0.15rem);
     border: clamp(0.12em, 0.2vw, 0.5em) solid var(--color-textPrimary);
+    color: var(--color-textPrimary);
+
     &::before 
     {
       transform: translate3d(-0.05rem, 0.05rem, -1rem);

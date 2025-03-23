@@ -1,0 +1,136 @@
+@import "./theme.css";
+
+
+.page-projects
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  
+    box-sizing: content-box;
+    gap: clamp(0.01rem, 0.5%, 15rem);
+
+
+    
+
+}
+
+
+
+.projects
+{
+    position: relative;
+    font-size: clamp(0.02rem, 2vw, 20rem);
+    font-family: "Inter", Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: left;
+    color: var(--accent-color);
+    padding: clamp(0.01rem, 2vw,20rem) 0; 
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: left;
+
+    .counter
+    {
+        font-size: clamp(0.02rem, 1vw, 20rem);
+    }
+}
+
+.project-container
+{
+    position: relative;
+    display: flex;
+    width: 99%;
+    border: clamp(0.02rem, 0.3vw, 20rem) solid var(--color-textPrimary);
+    border-radius: clamp(0.02rem, 2vw, 20rem) clamp(0.02rem, 02vw, 20rem);
+
+
+}
+
+
+.project-image-container
+{
+    position: relative;
+    display: block;
+    height: clamp(0.02rem, 26vw, 50rem);
+    width: clamp(0.02rem, 36vw, 50rem);
+    justify-content: center;
+    align-items: center;
+    padding: clamp(0.02rem, 2vw, 20rem) clamp(0.02rem, 2vw, 20rem);
+
+    .project-image
+    {
+        position: absolute;
+        width: clamp(0.02rem, 10vw, 50rem);
+        margin-left: 8vw;
+    }
+
+   .image-two
+    {    
+        transform: translate(80%,20%);
+    }
+}
+
+.project-divider
+{
+    display:    flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(0.01rem, 1vw, 20rem);
+
+    .text
+    {
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: clamp(0.01rem, 1vw, 20rem);
+        writing-mode: sideways-lr;
+        text-orientation: sideways;
+       
+    }
+
+    .bar
+    {
+        height: 90%;
+        width: clamp(0.01rem, 0.2vw, 20rem);
+        background-color: var(--accent-color);
+    }
+}
+
+
+.project-details
+{
+    display:    flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Inter', sans-serif;
+    padding: clamp(0.01rem ,8vw, 50rem) clamp(0.01rem ,3vw, 50rem);
+    width: 40%;
+    gap: clamp(0.01rem, 1vw, 20rem);
+   
+    .title
+    {
+        font-weight: 700;
+        font-size: clamp(0.01rem, 3vw, 20rem);
+    
+    }
+
+    .details
+    {
+        font-weight: 500;
+        font-size: clamp(0.01rem, 1.5vw, 20rem);
+    
+    }
+
+    .case-button
+    {
+       
+        padding: clamp(0.02rem, 1vw, 20rem) 0;
+      
+    }
+
+}
