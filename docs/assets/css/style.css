@@ -229,7 +229,7 @@ html{
 
 
 /** Resume _ Button */
-button.resume-btn 
+.resume-btn 
 {
   font-weight: 700;
   font-size: clamp(0.2rem, 1vw, 5rem);
@@ -283,10 +283,10 @@ button.resume-btn
   {
     background: var(--background-color);
     transform: translate(0.10rem, 0.3rem);
-    z-index: 100;
+    z-index: 40;
     &::before 
     {
-      z-index: 100;
+      z-index: 40;
       box-shadow: 0 0 0 2px var(--color-textPrimary), 0 0 var(--color-textPrimary)-shadow;
       transform: translate3d(-0.10rem, -0.1rem, -1rem);
     }
