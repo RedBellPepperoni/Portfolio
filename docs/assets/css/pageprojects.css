@@ -108,7 +108,7 @@
     flex-direction: column;
     align-items: flex-start;
     font-family: 'Inter', sans-serif;
-    padding: clamp(0.01rem ,8vw, 50rem) clamp(0.01rem ,3vw, 50rem);
+    padding: clamp(0.01rem ,6vw, 50rem) clamp(0.01rem ,3vw, 50rem);
     width: 40%;
     gap: clamp(0.01rem, 1vw, 20rem);
    
