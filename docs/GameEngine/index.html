@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+	
+
+	<title>Case Study :Custom Game Engine </title>
+
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/style.css"/>
+    <link rel="stylesheet" href="../assets/css/cursor.css"/>
+    <link rel="stylesheet" href="../assets/css/casestudy.css"/>
+    <link rel="stylesheet" href="../assets/fonts/fonts.css">
+    
+ 
+
+
+</head>
+<body>
+
+    <header class="screenedge top">
+        <div class="halftone"></div>
+        <button class="logo-btn" ></button>
+        <button class="resume-btn"  onclick="history.back()" >Back</button>
+
+    </header>
+
+    <div class="case-study">
+        
+        <!-- case-header:  Case Study Heading -->
+        <div class="case-header" id="header"> 
+
+            <!-- title-group :  Group contining Title and Descritption -->
+            <div class="title-group">
+
+                <span class="title color-accent"> CUSTOM <br>GAME ENGINE</span>
+                <span class="description color-text-primary"> A Game engine created from scratch using C++ and OpenGL</span>
+
+            </div> <!-- End of title-group-->
+
+            <!-- detail-group :  Group contining Role and Timeline -->
+            <div class="detail-group">
+
+                <div class="text-container">
+
+                    <span class="detail-text header"> ROLE</span>
+                    <span class="detail-text"> Engine/ Graphics Developer.</span>
+
+                </div>
+
+                <div class="text-container">
+
+                    <span class="detail-text header"> TIMELINE</span>
+                    <span class="detail-text"> Sep 2023 – Apr 2024.</span>
+
+                </div>
+            </div> <!-- End of detail-group -->
+
+        </div> <!-- End of case-header -->
+
+         <!-- header-display :  Group contining Role and Timeline -->
+        <div class="header-display">
+
+            <div class="base-rect"></div>
+            
+            <div class="image-group-container">
+              
+                <img class="header-image-snpengine" src="../assets/images/03_GameView.png"></img>
+                <img class="header-image-snpengine secondary left" src="../assets/images/01_ConsoleIMG.png"></img>
+                <img class="header-image-snpengine secondary right" src="../assets/images/02_GameEngine_View.png"></img>
+    
+               
+            </div>
+           
+
+        </div><!-- End of header-display -->
+
+
+
+        
+
+        <!-- case-description :  The main description of teh Case Study -->
+        <div class="general-container">
+            <div class="general-title color-accent">Description</div>
+            <p class="general-description color-text-secondary ">I always wanted to learn how game engine like Unreal and Unity worked under the hood. So I decided to create my own engine as a learning exercise. This engine was created during my Advanced game development program at Fanshawe College
+                <br><br> The main thing that i wanted to learn was Navigation meshes and to learn good Pathfinding.
+                <br> It started with just a small render engine loading gltf meshes and rendering the triangles. This went on to become a game engine with full blown editor</p> 
+        </div><!-- End of case-description -->
+
+
+
+        <!-- showcase-gameplay :  The showcase of the gameplay -->
+        <div class="general-container">
+            <div class="general-title color-accent">The Gameplay</div>
+
+            <div class="video-general">
+
+                <video width="100%" controls>
+                    <source src="../assets/videos/Vid_Gameplay.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+
+
+            <p class="general-description color-text-secondary ">The gameplay features a small technical demo to showcase the Engine. The game is set in an underground abandoned subway station infested with zombies. The player along with his robot "Buddy" has to escape to the surface.
+                <br><br>The player is equiped with a pistol and can also command "Buddy" to kill zombies. The technical demo is to showcase the mesh navigation system that is built from scratch. The Robot and Zombies use this navigation system for pathfinding.
+            </p> 
+        </div><!-- End of showcase-gameplay -->
+
+        <!-- showcase-engine :  The showcase of the engine tools -->
+        <div class="general-container">
+            <div class="general-title color-accent">The Engine</div>
+
+            <div class="video-general">
+
+                <video width="100%" controls>
+                    <source src="../assets/videos/Vid_Editorshowcase.mp4" type="video/mp4">
+                    <!--<source src="../assets/videos/VID_GamePlay.mp4" type="video/mp4"> -->
+                    Your browser does not support the video tag.
+
+                  </video>
+            </div>
+
+
+            <p class="general-description color-text-secondary ">The Engine is built from ground up using C++ and OpenGL. It features A multitude of Graphical features like, Post-process , Deferred Lighting and dynamic skyboxes.
+                <br><br> Bullet Physics is intregated as the physics platform and EnTT is used for Data oriented Stack. The Editor is rendered using IMGui and can be accessed any thing using the "~" key.
+            </p> 
+        </div><!-- End of showcase-engine -->
+
+
+
+
+
+
+        <!-- case-pitch :  The main pitch of the Case Study -->
+        <div class="general-container">
+            <div class="general-title color-accent">The Graphics</div>
+            <p class="general-description color-text-secondary ">The Base of the Engine is coded in C++ and uses OpenGL as the Rendering API. The model loader uses AssImp for loading a variety of formats and there's a custom allocator to create and assign Vertex Arrays and Buffer Objects.
+                <br><br> The Engine also has a custom Shader compiler which can read #includes inside the GLSL files and to compile the shader along with its dependencies
+            </p>
+       
+       
+            <div class="expandable-container">
+                <div class="card">
+                    <h2>Graphics</h2>
+                    <p> Made with OpenGL
+                    </p>
+                  
+
+                    <div class="tabs">
+                        <i> Lighting </i>
+                        <i> Skyboxes </i>
+                        <i> Animation </i>
+                    </div>
+
+                    <div class="arrow-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 -960 960 960"  fill="#FFFFFF"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                    </div>
+
+                    <div class="flavorText">
+                        Read More
+                    </div>
+
+                    <button class="orange">
+                    </button>
+
+                    <div class="photo"></div>
+                </div>
+
+               
+            </div>
+
+       
+        </div><!-- End of case-pitch -->
+
+      
+
+        <div class="general-container">
+            <div class="general-title color-accent">The Physics</div>
+            <p class="general-description color-text-secondary ">The Base of the Engine is coded in C++ and uses OpenGL as the Rendering API. The model loader uses AssImp for loading a variety of formats and there's a custom allocator to create and assign Vertex Arrays and Buffer Objects.
+                <br><br> The Engine also has a custom Shader compiler which can read #includes inside the GLSL files and to compile the shader along with its dependencies
+            </p>
+       
+       
+            <div class="expandable-container">
+                <div class="card">
+                    <h2>Physics</h2>
+                    <p> Custom and Bullet Integration
+                    </p>
+                  
+
+                    <div class="tabs">
+                        <i> Cloth </i>
+                        <i> Softbody </i>
+                        <i> Octrees </i>
+                    </div>
+
+                    <div class="arrow-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 -960 960 960"  fill="#FFFFFF"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                    </div>
+
+                    <div class="flavorText">
+                        Read More
+                    </div>
+
+                    <button >
+                    </button>
+
+                    <div class="photo physics"></div>
+                </div>
+
+               
+            </div>
+
+       
+        </div><!-- End of case-pitch -->
+
+
+
+        <div class="general-container">
+            <div class="general-title color-accent">The Extras</div>
+            <p class="general-description color-text-secondary ">The showcase feature of this engine was the custom made mesh navigation system - it checks the mesh vertices and creates a nav mesh for pathfinders to follow.
+                <br><br> FM0d is integrated in the Engine to provide spacial audio and to support various DSP effects. 
+            </p>
+       
+       
+            <div class="expandable-container">
+                <div class="card">
+                    <h2>Extras</h2>
+                    <p> Additional Engine features
+                    </p>
+                  
+
+                    <div class="tabs">
+                        <i> Threading </i>
+                        <i> PathFinding</i>
+                        <i> FMod Support </i>
+                    </div>
+
+                    <div class="arrow-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 -960 960 960"  fill="#FFFFFF"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                    </div>
+
+                    <div class="flavorText">
+                        Read More
+                    </div>
+
+                    <button class="blue">
+                    </button>
+
+                    <div class="photo extras"></div>
+                </div>
+
+               
+            </div>
+
+       
+        </div><!-- End of case-pitch -->
+
+
+           <!-- case-outcome :  The main pitch of teh Case Study -->
+           <div class="general-container">
+            <p class="general-title color-accent">More to Come ...</p>
+            <p class="general-description color-text-secondary ">This is an ongoing project that i am aiming to improve and optimize. The next plan includes addition of RHIs to integrate DX12 and Vulkan apis.
+               <br><br> Builing this Engine taught me a lot about how larger engines like Unreal run behind the scenes .It has also increased my love (and Hate) for C++.</p>
+        </div><!-- End of case-outcome -->
+
+    </div> <!-- End of case-study -->
+
+
+</body>
+
+</html >
