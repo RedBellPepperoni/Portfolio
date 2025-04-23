@@ -43,6 +43,7 @@
 
 .project-container
 {
+    margin-top: 5%;
     position: relative;
     display: flex;
     width: 99%;
@@ -70,10 +71,27 @@
         margin-left: 8vw;
     }
 
+    .project-image.gameengine
+    {
+        width: clamp(0.02rem, 20vw, 50rem);
+        left :10%;
+        top:20%;
+        margin-left: 0;
+        border-radius: 0.6vw;
+    }
+
+
    .image-two
     {    
         transform: translate(80%,20%);
     }
+
+    .image-two.gameengine
+    {    
+        transform: translate(10vw,10vw);
+    }
+
+
 }
 
 .project-divider
