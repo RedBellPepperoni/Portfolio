@@ -71,4 +71,3 @@ function onMouseMove(e){
 window.addEventListener("resize", updateSize);
 updateSize();
 
-

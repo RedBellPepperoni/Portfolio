@@ -63,3 +63,23 @@ tabs.forEach((tab) =>
 
 
 showTab("tab1");
+
+
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const gallery = document.querySelector('.grid-container');
+
+  // Listen for click events on the image gallery
+  gallery.addEventListener('click', (e) => {
+    // If the clicked element is an image with class "openfullscreen"
+    if (e.target && e.target.tagName === 'IMG' && e.target.classList.contains('openfullscreen')) {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = e.target.src;  // Set the lightbox image source
+    }
+  });
+
+  // Close the lightbox when clicking on the overlay
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
