@@ -680,9 +680,7 @@
             </div>   <!-- Endof TopContainer)-->
 
             <!-- MidContainer :The Container for the Form data (Email, Name, And Message)-->
-            <form id="contact" action="" method="post" class="display-container main">
-                <form id="contact" action="https://docs.google.com/forms/d/e/1FAIpQLSfdzT2MyfpfmAwMypNGKFykwg6cbAwX6p_fVm101tPq_2UsOQ/formResponse" method="POST" class="display-container main">
-               
+           <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfdzT2MyfpfmAwMypNGKFykwg6cbAwX6p_fVm101tPq_2UsOQ/formResponse" method="POST" class="display-container main">
                     <div class="phone-textfield">
                         <label class="inputLabel"> NAME:</label>
                         <input type="name" name="entry.847451771" id="name" placeholder="Your name" autocomplete="on" required>  
@@ -709,7 +707,7 @@
             <!-- BotContainer : The Container for the UI buttons (for Sen and bak and Options)-->
             <div class="display-container bot">
                 <button class="phone-button" id="openGame">More</button>
-                <div class="phone-button send">Send</div>
+                <button type="button"class="phone-button send" id="submitButton">Send</button>
                 <button class="phone-button" id="closeDialog">Back</button>
             </div><!-- Endof BotContainer)-->
 
@@ -785,6 +783,8 @@
 
         </div>
 
+
+        <div id="toast" class="toast">Your message has been sent!</div>
 
     </dialog>
 
