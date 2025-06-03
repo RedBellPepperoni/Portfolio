@@ -419,76 +419,39 @@ closeGame.addEventListener("click", CloseGame);
         document.body.removeChild(dummy);
     }
 
-    //Form Submission
-// document.addEventListener("DOMContentLoaded", function() {
-//         const submitButton = document.getElementById('submitButton');
-//         const form = document.getElementById('contact-form');
-        
-//         submitButton.addEventListener('click', function(event) {
-//             event.preventDefault();  // Prevent the default button behavior
+   // Form Submission
+document.addEventListener("DOMContentLoaded", function() {
+    const submitButton = document.getElementById('submitButton');
+    const form = document.getElementById('contact-form');
+    const toast = document.getElementById('toast-contact'); // Get the toast element
+    
+    submitButton.addEventListener('click', function(event) {
+        event.preventDefault();  // Prevent the default button behavior
 
-//             // Simple validation to check if the required fields are filled
-//             const name = document.getElementById('name').value;
-//             const email = document.getElementById('email').value;
-//             const message = document.getElementById('message').value;
+        // Simple validation to check if the required fields are filled
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
 
-//             if (name && email && message) {
-//                 console.log("Form is valid, submitting...");
-//                 form.submit();  // Submit the form to Google Forms
-//             } else {
-//                 console.log("Please fill all fields.");
-//                 alert("Please fill all fields before submitting.");
-//             }
-//         });
-//     });
-
-
-
-    document.addEventListener("DOMContentLoaded", function() {
-        const submitButton = document.getElementById('submitButton');
-        const form = document.getElementById('contact-form');
-        const toast = document.getElementById('contact-form-toast');
-        
-        submitButton.addEventListener('click', function(event) {
-            event.preventDefault();  // Prevent the default button behavior
-
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            // Simple validation to check if the required fields are filled
-            if (name && email && message) {
-                const formData = new FormData(form);
-
-                // Send form data using Fetch API to prevent the page redirect
-                fetch(form.action, {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => {
-                    if (response.ok) {
-                        console.log("Form submitted successfully!");
-                        showToast(); // Show the toast message
-                    } else {
-                        console.log("Error in form submission.");
-                        alert("There was an error submitting your message. Please try again.");
-                    }
-                })
-
-                .catch(error => {
-                    console.error("Error submitting form:", error);
-                    alert("There was an error submitting your message. Please try again.");
-                });
-            } else {
-                alert("Please fill in all fields before submitting.");
-            }
-        });
-
-        // Function to show the toast notification
-        function showToast() {
-            toast.style.display = "block"; // Show the toast
-            setTimeout(function() {
-                toast.style.display = "none"; // Hide it after 3 seconds
-            }, 3000);
+        if (name && email && message) {
+            console.log("Form is valid, submitting...");
+            
+            // Show toast notification before submitting the form
+            showToast();
+            form.submit(); 
+        } else {
+            console.log("Please fill all fields.");
+            alert("Please fill all fields before submitting.");
         }
     });
+
+  
+    function showToast() {
+        toast.classList.add('show'); 
+
+       
+        setTimeout(function() {
+            toast.classList.remove('show'); // Remove the 'show' class to hide it
+        }, 5000);
+    }
+});

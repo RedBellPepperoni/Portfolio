@@ -680,7 +680,7 @@
             </div>   <!-- Endof TopContainer)-->
 
             <!-- MidContainer :The Container for the Form data (Email, Name, And Message)-->
-           <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfdzT2MyfpfmAwMypNGKFykwg6cbAwX6p_fVm101tPq_2UsOQ/formResponse" method="POST" class="display-container main">
+           <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfdzT2MyfpfmAwMypNGKFykwg6cbAwX6p_fVm101tPq_2UsOQ/formResponse" method="POST" target="googleFormIframe" class="display-container main">
                     <div class="phone-textfield">
                         <label class="inputLabel"> NAME:</label>
                         <input type="name" name="entry.847451771" id="name" placeholder="Your name" autocomplete="on" required>  
@@ -710,6 +710,12 @@
                 <button type="button"class="phone-button send" id="submitButton">Send</button>
                 <button class="phone-button" id="closeDialog">Back</button>
             </div><!-- Endof BotContainer)-->
+
+            <!-- hacky way to remove google redirect-->
+            <iframe id="googleFormIframe" name="googleFormIframe" style="display:none;"></iframe>
+
+            <!-- Toast Container for Success Message -->
+            <div id="toast-contact" class="toast">Your message has been sent successfully!</div>
 
         </div>
 

@@ -429,24 +429,45 @@ canvas
 }
 
 
-.toast {
-        visibility: hidden;
-        min-width: 250px;
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        border-radius: 2px;
-        padding: 16px;
-        position: fixed;
-        z-index: 9999;
-        left: 50%;
-        bottom: 30px;
-        transform: translateX(-50%);
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-    }
 
-    .toast.show {
-        visibility: visible;
-        opacity: 1;
+.toast {
+    visibility: hidden;
+    min-width: 250px; 
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff; 
+    text-align: center;
+    border-radius: 2px; 
+    padding: 16px; 
+    position: fixed; 
+    z-index: 1000; 
+    bottom: 30px; 
+    left: 50%; 
+    font-size: 17px;
+}
+
+/* Show the toast when it's triggered */
+.toast.show {
+    visibility: visible; 
+    animation: fadeInOut 3s ease-in-out;
+}
+
+/* Animation to fade out the toast after a few seconds */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        bottom: 30px;
     }
+    25% {
+        opacity: 1;
+        bottom: 30px;
+    }
+    75% {
+        opacity: 1;
+        bottom: 30px;
+    }
+    100% {
+        opacity: 0;
+        bottom: 0px;
+    }
+}
